@@ -1,0 +1,340 @@
+{
+  "compare": [
+    {
+      "q": "What is the difference between early blight and late blight?",
+      "kind": "table",
+      "answered": true,
+      "rows": 5,
+      "cols": 3,
+      "cited_rows": 5,
+      "table_ok": true,
+      "faithful": false,
+      "answer": "| Aspect | Early Blight | Late Blight |\n|--------|--------------|-------------|\n| Cause | Caused by the fungus *Alternaria solani* [3] | Caused by the water mold *Phytophthora infestans* [1] |\n| Host Crops | Tomato and potato plants [3] | Potato and tomato plants [1] |\n| Symptoms | \"Bullseye\" patterned leaf spots, stem lesions, and fruit rot [3] | Rapid and complete chlorosis, browning, then death of plant tissues such as leaves, branches, twigs, or floral organs [1] |\n| Historical Impact | Has never caused widespread famine or other sudden and major detrimental effects on humanity [2] | Responsible for the Great Famine of Ireland in the 1840s [2] |\n| Management | Preventing long periods of wetness on leaf surfaces and applying fungicides [3] | Not stated in the articles | \n\nThe main difference between early blight and late blight is that early blight has never caused widespread famine, while late blight was responsible for the Great Famine of Ireland [2]."
+    },
+    {
+      "q": "What is the difference between stem rust and wheat leaf rust?",
+      "kind": "table",
+      "answered": true,
+      "rows": 6,
+      "cols": 3,
+      "cited_rows": 6,
+      "table_ok": true,
+      "faithful": true,
+      "answer": "| Aspect | Stem Rust | Wheat Leaf Rust |\n|--------|-----------|----------------|\n| Cause | Caused by the fungus *Puccinia graminis* [1] | Caused by the fungus *Puccinia triticina* [4] |\n| Host crops | Affects bread wheat, durum wheat, barley, and triticale [1] | Affects wheat, barley, rye stems, leaves, and grains [4] |\n| Symptoms | Characterized by brick-red, elongated, blister-like pustules on the plant [3] | Characterized by small brown pustules on the leaf blades [5] |\n| Spread | Spores land on green wheat plants and form pustules [2] | Spreads via airborne spores [6] |\n| Management | Fungicides effective against stem rust are available [1] | Not stated in the articles |\n| Yield loss | Can reduce yield by causing shriveled grains, lodging, and nutrient absorption by the fungus [2] | Can lead to up to 20% yield loss [4] |\n\nThe main difference is that stem rust is caused by *Puccinia graminis* and affects a range of cereal crops, while wheat leaf rust is caused by *Puccinia triticina* and primarily affects wheat, barley, and rye [1][4]."
+    },
+    {
+      "q": "Compare Karnal bunt and loose smut",
+      "kind": "table",
+      "answered": true,
+      "rows": 6,
+      "cols": 3,
+      "cited_rows": 6,
+      "table_ok": true,
+      "faithful": true,
+      "answer": "| Aspect | Karnal bunt | Loose smut |\n|--------|-------------|-------------|\n| Cause | Fungal disease caused by Tilletia indica [1] | Fungal disease caused by Ustilago nuda [4] |\n| Host crops | Affects wheat, durum wheat, and triticale [1] | Affects barley (Hordeum vulgare L.) and other cereal crops like wheat [5] |\n| Symptoms | Bunted kernels with a disagreeable odor, making them unpalatable for flour or pasta [1] | Smutted grain heads with masses of black or brown spores replacing the grain [5] |\n| Spread | Spread through teliospores under favorable weather conditions (humidity >70%, temperatures 18–24 °C) [2] | Spread through spores infecting open flowers of healthy plants [5] |\n| Management | Chemical control methods exist, but resistant host varieties are still being identified [1] | Systemic fungicides are the major control method [4] |\n| Economic impact | Causes quarantine and export restrictions, especially in the U.S. [3] | Can wipe out entire crops, especially in resource-limited areas [6] |\n\nThe main difference is that Karnal bunt primarily affects wheat and related crops, while loose smut mainly affects barley and other cereals, with loose smut having a more severe impact on crop yield [5][6]."
+    },
+    {
+      "q": "Difference between the pink bollworm and the boll weevil",
+      "kind": "table",
+      "answered": true,
+      "rows": 5,
+      "cols": 3,
+      "cited_rows": 5,
+      "table_ok": true,
+      "faithful": true,
+      "answer": "| Aspect | Pink Bollworm | Boll Weevil |\n|--------|---------------|-------------|\n| Host crops | Cotton, tomatoes, pigeon pea, chickpea, rice, sorghum, cowpea, groundnut, okra, peas, field beans, soybeans, lucerne, Phaseolus spp., other Leguminosae, tobacco, potatoes, maize, flax, Dianthus, Rosa, Pelargonium, Chrysanthemum, Lavandula angustifolia, fruit trees, forest trees, and vegetable crops [3] | Cotton [4] |\n| Damage | Feeds on cotton lint and seeds, causing damage to both fiber and seed oil; creates entry points for other pests [1] | Feeds on cotton buds and flowers [4] |\n| Spread | Eggs laid in cotton bolls; larvae feed on seeds and lint [1]; can spread through infested bolls and unharvested crops [2] | Spread through migration from Mexico to the U.S. and later to South America [4] |\n| Management | Controlled with transgenic Bt cotton, sterile male releases, insecticides, plowing, irrigation, burning stubble, mating disruption, and releases of sterile males [2] | Managed through the Boll Weevil Eradication Program, genetically engineered Bt cotton, and natural predators [4][5][6] |\n| Eradication status | Eradicated from continental U.S. by 2018 [2] | Eliminated from most of the U.S. due to the Boll Weevil Eradication Program [4][6] |\n\nThe main difference is that the pink bollworm primarily damages cotton lint and seeds, while the boll weevil feeds on cotton buds and flowers, with the latter being more associated with historical devastation in the U.S. [4][6]."
+    },
+    {
+      "q": "What is the difference between Panama disease and black sigatoka?",
+      "kind": "table",
+      "answered": true,
+      "rows": 6,
+      "cols": 3,
+      "cited_rows": 6,
+      "table_ok": true,
+      "faithful": true,
+      "answer": "| Aspect | Panama Disease | Black Sigatoka |\n|--------|----------------|----------------|\n| Cause | Caused by the fungus *Fusarium oxysporum* f. sp. cubense [1] | Caused by the ascomycete fungus *Mycosphaerella fijiensis* [4] |\n| Symptoms | Causes wilting in banana plants [1] | Causes streaks on banana leaves parallel to secondary veins [5] |\n| Spread | Spread through infected rhizomes, soil, water, farm implements [2] | Spread in hot and humid environments with rainfall [5] |\n| Host Crops | Affects a wide range of banana cultivars [2] | Affects banana trees specifically in tropical climates [5] |\n| Management | Control is limited to phytosanitary measures [1] | Control can take up to 50 sprays a year [4] |\n| Economic Impact | Threatened the production of Cavendish banana [1] | Threatens the fruit's economy and the lives of people who depend on the fruit [6] |\n\nPanama disease and black sigatoka differ mainly in their causative agents and symptoms, with Panama disease causing wilting in banana plants while black sigatoka causes streaks on banana leaves [1][5]."
+    },
+    {
+      "q": "Compare the Colorado potato beetle and the Japanese beetle",
+      "kind": "table",
+      "answered": true,
+      "rows": 5,
+      "cols": 3,
+      "cited_rows": 5,
+      "table_ok": true,
+      "faithful": true,
+      "answer": "| Aspect | Colorado potato beetle | Japanese beetle |\n|--------|------------------------|------------------|\n| Native habitat | Rocky Mountains, native to the area between Colorado and northern Mexico [1] | Native to Japan [4] |\n| Host crops | Primarily potato plants (Solanum tuberosum) [1] | Feeds on leaves of a wide range of plants including bean, cannabis, strawberry, tomato, pepper, grape, hop, rose, cherry, plum, pear, peach, raspberry, blackberry, corn, pea, okra, and blueberry [6] |\n| Spread method | Disperses via walking and flight, with diapause flights for long-distance dispersal [3] | Spreads via flight and movement, with larvae living in lawns and grasslands [5] |\n| Impact | Major pest of potato crops, causing significant damage [1] | Destructive to over 300 species of plants, including many crops and ornamental plants [4] |\n| Management | Management strategies include monitoring and control actions, though specific methods are not detailed [5] | Traps have been developed, but they are not always effective [5] |\n\nThe main difference is that the Colorado potato beetle primarily targets potato crops, while the Japanese beetle affects a wide range of plants including many crops and ornamental species [4]."
+    },
+    {
+      "q": "How does downy mildew differ from powdery mildew?",
+      "kind": "table",
+      "answered": true,
+      "rows": 5,
+      "cols": 3,
+      "cited_rows": 5,
+      "table_ok": true,
+      "faithful": true,
+      "answer": "| Aspect | Downy Mildew | Powdery Mildew |\n|--------|--------------|----------------|\n| Cause | Oomycete microbes belonging to the Peronosporaceae family [1]. | Ascomycete fungi belonging to the Erysiphaceae family [4]. |\n| Host crops | Crucifers, grapes, vegetables on vines, and cucurbits (e.g., cantaloupe, cucumber, pumpkin, squash, watermelon) [1][2]. | Over 10,000 species of plants, including many commercially valuable ones [4]. |\n| Symptoms | Soft rots on fruit after canopy collapse and sunburn, affects only leaves of cucurbit plants [1]. | White, powdery coating on host plants [4]. |\n| Spread | Progresses northward with cucurbit production each spring [1]. | Thrives in areas with little air flow, dry host leaves, and humid conditions [5]. |\n| Management | Not stated in the articles | Avoid sheltered places, provide good drainage, avoid dense planting, prune shrubs, avoid over-fertilizing, and use fungicides [5]. |\n\nThe main difference is that downy mildew is caused by oomycete microbes, while powdery mildew is caused by ascomycete fungi [1][4]."
+    },
+    {
+      "q": "Compare fire blight and citrus canker",
+      "kind": "table",
+      "answered": true,
+      "rows": 6,
+      "cols": 3,
+      "cited_rows": 6,
+      "table_ok": true,
+      "faithful": true,
+      "answer": "| Aspect | Fire Blight | Citrus Canker |\n|--------|------------|---------------|\n| Cause | Caused by the bacterium *Erwinia amylovora* [1] | Caused by the bacterium *Xanthomonas citri* [4] |\n| Host Crops | Affects apples, pears, loquat, crabapples, quinces, hawthorn, cotoneaster, Pyracantha, raspberry, toyon, and other rosaceous plants [1] | Affects citrus species such as lime, oranges, and grapefruit [4] |\n| Symptoms | Causes rapid and complete chlorosis, browning, and death of plant tissues, including leaves, branches, twigs, and floral organs [2] | Causes lesions on leaves, stems, and fruit, leading to leaf and fruit drop, and premature dropping of leaves and fruit [4] |\n| Spread | Spread by overhead water systems, pruning tools, and the fly *Delia platura* [3] | Spread by wind-driven rain and splashed rain [6] |\n| Management | Prevention through avoiding overhead irrigation, meticulous pruning, and disinfecting tools [3] | Management involves controlling environmental conditions and preventing spread through wind-driven rain [6] |\n| Quarantine Status | Listed as a quarantine disease in Europe [1] | Not explicitly mentioned as a quarantine disease in the provided passages [4] |\n\nThe main difference is that fire blight is primarily associated with rosaceous plants like apples and pears, while citrus canker specifically affects citrus species such as oranges and lemons [1][4]."
+    },
+    {
+      "q": "What is the difference between coffee leaf rust and blister blight?",
+      "kind": "table",
+      "answered": true,
+      "rows": 6,
+      "cols": 3,
+      "cited_rows": 6,
+      "table_ok": true,
+      "faithful": true,
+      "answer": "| Aspect | Coffee Leaf Rust | Blister Blight |\n|--------|------------------|----------------|\n| Cause | Caused by the fungus *Hemileia vastatrix* [1] | Caused by the fungus *Exobasidium vexans* [5] |\n| Host crops | Affects coffee plants (*Coffea sp.*) [1] | Affects tea plants (*Camellia sinensis*) [5] |\n| Symptoms | Causes leaf rust, leaf drop, and reduced photosynthesis [1] | Causes yellow translucent leaf spots that progress to blisters on the lower leaf surface [5] |\n| Spread | Spores are wind dispersed [1] | Spores are wind dispersed and germinate within 24 hours [5] |\n| Management | Organic farmers can use copper-based Bordeaux mix and commercial mixtures [3] | Not stated in the articles |\n| Economic impact | One of the most economically important diseases of coffee, worldwide [1] | The most economically significant tea pathogen in many countries, causing up to 50% crop yield loss [5] |\n\nThe main difference between coffee leaf rust and blister blight is that coffee leaf rust affects coffee plants while blister blight affects tea plants, with the former caused by *Hemileia vastatrix* and the latter by *Exobasidium vexans* [1][5]."
+    },
+    {
+      "q": "Compare the desert locust and the fall armyworm",
+      "kind": "table",
+      "answered": true,
+      "rows": 6,
+      "cols": 3,
+      "cited_rows": 6,
+      "table_ok": true,
+      "faithful": false,
+      "answer": "| Aspect | Desert Locust | Fall Armyworm |\n|--------|---------------|----------------|\n| Host crops | Consumes a wide range of crops, including valuable crops [1]. | Damages and destroys a wide variety of crops [4]. |\n| Symptoms | Causes widespread damage to crops by consuming all vegetation [1]. | Causes large economic damage through crop destruction [4]. |\n| Spread | Highly mobile and can travel long distances, forming locust plagues [1]. | Active at different times of the year compared to true armyworms [5]. |\n| Management | Control operations are costly and aim to stop the spread of invasions [3]. | Biological control includes parasitoids like Archytas marmoratus and Cotesia marginiventris [6]. |\n| Mobility | Can travel long distances and form migratory swarms [1]. | Active in late summer in the southern U.S. and early fall in northern regions [5]. |\n| Feeding habits | Polyphagous, feeding on leaves, shoots, flowers, fruit, seeds, stems, and bark [3]. | Larvae practice cannibalism despite fitness costs [4]. |\n\nThe main difference is that the desert locust is highly mobile and can form migratory swarms, while the fall armyworm is active at different times of the year compared to other armyworm species [5]."
+    },
+    {
+      "q": "Difference between aphids and whiteflies",
+      "kind": "table",
+      "answered": true,
+      "rows": 7,
+      "cols": 3,
+      "cited_rows": 7,
+      "table_ok": true,
+      "faithful": true,
+      "answer": "| Aspect | Aphids | Whiteflies |\n|--------|--------|------------|\n| Family | Aphididae [1] | Aleyrodidae [4] |\n| Order | Hemiptera [1] | Hemiptera [4] |\n| Common names | Greenfly, blackfly, woolly aphids [1] | Not stated in the articles [4] |\n| Size | Small, with some species being fluffy white [1] | Small, most species with a wingspan of less than 3 mm and a body length of 1 mm to 2 mm [5] |\n| Host plants | Some feed on one type of plant, others are generalists [1] | Not stated in the articles [4] |\n| Feeding behavior | Suck sap from plants [2] | Feed on the undersides of plant leaves [4] |\n| Pest status | Many are serious pests of agriculture and forestry [1] | Transmit almost 60 other viral plant diseases [6] |\n\nThe main difference is that whiteflies transmit more viral plant diseases compared to aphids, as indicated in [6]."
+    },
+    {
+      "q": "Compare corn smut and loose smut",
+      "kind": "table",
+      "answered": true,
+      "rows": 8,
+      "cols": 3,
+      "cited_rows": 8,
+      "table_ok": true,
+      "faithful": false,
+      "answer": "| Aspect | Corn smut | Loose smut |\n|--------|-----------|-------------|\n| Cause | Caused by the pathogenic fungus Mycosarcoma maydis, synonym Ustilago maydis [1] | Caused by Ustilago nuda [4] |\n| Host crops | Affects all above-ground parts of corn species such as maize and teosinte [1] | Affects barley 'Hordeum vulgare L.' and other cereal crops [5] |\n| Symptoms | Forms galls on all above-ground parts of corn species [1] | Replaces grain heads with masses of black or brown spores [5] |\n| Spread | Spores infect the open flowers of healthy plants and grow into the seed [5] | Spores infect the open florets of healthy plants [5] |\n| Management | Not mentioned in the articles [1] | Systemic fungicides are the major control method [4] |\n| Nutritional value | Contains more proteins than uninfected grains and has more lysine [2] | Not mentioned in the articles [4] |\n| Culinary use | Edible; in Mexico, it is considered a delicacy called huitlacoche [1] | Not mentioned in the articles [4] |\n| Medicinal use | Used by Native Americans to induce labor with effects similar to ergot [3] | Not mentioned in the articles [4] |\n\nThe main difference is that corn smut is edible and has culinary and medicinal uses, while loose smut is not edible and can destroy entire barley crops [1][3][4][5]."
+    }
+  ],
+  "count": [
+    {
+      "q": "Give me 5 points on rice blast",
+      "asked": 5,
+      "got": 5,
+      "answered": true,
+      "exact": true,
+      "honest_if_fewer": true,
+      "faithful": true,
+      "answer": "1. Rice blast, caused by the fungus *Magnaporthe grisea*, is the most important disease concerning rice crops worldwide [1].  \n2. It is considered one of the ten most important diseases of all crop plants and is perennially the worst rice disease alongside bacterial leaf streak [2].  \n3. The disease leads to significant crop losses, with estimates suggesting it destroys enough rice to feed more than 60 million people annually [1][3].  \n4. Rice blast is found in over 85 countries and has been present in the United States since 1996 [1].  \n5. The disease thrives in conditions of high humidity and leaf wetness, with sporulation and infection being most effective at temperatures between 25–28 °C [5]."
+    },
+    {
+      "q": "Give me 3 points about aphids",
+      "asked": 3,
+      "got": 3,
+      "answered": true,
+      "exact": true,
+      "honest_if_fewer": true,
+      "faithful": true,
+      "answer": "1. Aphids have soft bodies that can be green, black, brown, pink, or almost colorless, and they possess a pair of cornicles, which are abdominal tubes used to exude defensive fluids [1].  \n2. Aphids can cause various symptoms in plants, including decreased growth rates, yellowing, stunted growth, and low yields, and they often transmit plant viruses through both non-circulative and circulative transmission methods [2].  \n3. Aphids are small sap-sucking insects that feed on phloem sap, and they can also ingest xylem sap, which may serve purposes beyond just water replenishment, such as maintaining fecundity [5]."
+    },
+    {
+      "q": "4 key facts about Karnal bunt",
+      "asked": 4,
+      "got": 4,
+      "answered": true,
+      "exact": true,
+      "honest_if_fewer": true,
+      "faithful": true,
+      "answer": "1. Karnal bunt is a fungal disease caused by *Tilletia indica*, affecting wheat, durum wheat, and triticale [1].  \n2. The disease is named after Karnal, India, where it was first discovered in 1931, and it has since been reported in several countries including India, Pakistan, and the United States [2].  \n3. Karnal bunt can lead to economic losses due to quarantine restrictions and export bans, especially in the U.S., where infected wheat is deemed unfit for human consumption [3].  \n4. Research has identified resistance genes in wheat cultivars that can help control the disease, and some natural extracts have shown effectiveness in reducing infection [4]."
+    },
+    {
+      "q": "Tell me 6 points about late blight of potato",
+      "asked": 6,
+      "got": 6,
+      "answered": true,
+      "exact": true,
+      "honest_if_fewer": true,
+      "faithful": true,
+      "answer": "1. Late blight of potato is caused by the water mold Phytophthora infestans [1].  \n2. The disease leads to rapid and complete chlorosis, browning, and death of plant tissues such as leaves, branches, twigs, or floral organs [1].  \n3. Late blight is responsible for the Great Famine of Ireland in the 1840s, along with the socio-economic situation at the time [2].  \n4. Symptoms include dark green, then brown, then black spots on the surface of potato leaves and stems, often near the tips or edges [3].  \n5. The pathogen favors moist, cool environments, with sporulation optimal at 12–18 °C (54–64 °F) in water-saturated or nearly saturated conditions [6].  \n6. The early stages of late blight are easily missed, with symptoms including dark blotches on leaf tips and plant stems [3]."
+    },
+    {
+      "q": "5 points on crop rotation",
+      "asked": 5,
+      "got": 5,
+      "answered": true,
+      "exact": true,
+      "honest_if_fewer": true,
+      "faithful": true,
+      "answer": "1. Crop rotation involves growing a series of different types of crops in the same area across a sequence of growing seasons, which reduces reliance on specific nutrients, pests, and weeds [1].  \n2. It contributes to increased yields through improved soil nutrition by requiring planting and harvesting of different crops at different times, allowing more land to be farmed with the same amount of machinery and labor [2].  \n3. Crop choice is related to the goal the farmer is looking to achieve, such as weed management, increasing available nitrogen in the soil, controlling erosion, or improving soil structure and biomass [3].  \n4. The benefits to yield in rotated crops are described as \"The Rotation Effect,\" which includes improved nutrition, reduced pest and weed stress, and enhanced soil structure [4].  \n5. Planning a crop rotation requires considering factors like market, farm size, labor supply, climate, soil type, and growing practices, with specific crop sequencing to optimize soil conditions for subsequent crops [5]."
+    },
+    {
+      "q": "10 points on integrated pest management",
+      "asked": 10,
+      "got": 10,
+      "answered": true,
+      "exact": true,
+      "honest_if_fewer": true,
+      "faithful": true,
+      "answer": "1. Integrated pest management (IPM) relies on understanding the structure and functions of an ecosystem [1].  \n2. IPM combines both non-chemical and chemical practices for economic control of pests, reducing reliance on chemicals [2].  \n3. IPM is defined as the careful consideration of all available pest control techniques and subsequent integration of appropriate measures to discourage the development of pest populations [2].  \n4. IPM is used in various applications including agriculture, horticulture, forestry, and residential areas [7].  \n5. In residential pest management, IPM focuses on prevention, sanitation, and exclusion of pests rather than chemical controls [3].  \n6. IPM involves identifying pests, sealing entry points, and removing food and water sources to prevent pest infestation [3].  \n7. In agricultural pest management, IPM employs cultural controls, physical barriers, mechanical interventions, biological controls, and chemical controls as needed [4].  \n8. IPM includes the use of livestock as part of the pest control strategy in some cases [4].  \n9. IPM can include the sterile insect technique (SIT), which introduces sterile male pests to reduce reproduction rates [8].  \n10. IPM helps in managing pesticide resistance by reducing pesticide use and using pesticide rotation [6]."
+    },
+    {
+      "q": "Give me 7 points on the fall armyworm",
+      "asked": 7,
+      "got": 7,
+      "answered": true,
+      "exact": true,
+      "honest_if_fewer": true,
+      "faithful": true,
+      "answer": "1. The fall armyworm is a species in the order Lepidoptera and family Noctuidae, distinguished by its larval life stage [2].  \n2. It is active at a different time of year compared to the true armyworm, causing most damage in late summer in the southern U.S. and early fall in the northern regions [1].  \n3. The fall armyworm can damage and destroy a wide variety of crops, leading to significant economic losses [2].  \n4. The larvae of the fall armyworm consume over 80 different plants, including grasses, grains, and various other crops [3].  \n5. Fifty-three different parasite species have been found in fall armyworm larvae, spanning ten different families [4].  \n6. Several parasitoids, such as Archytas marmoratus, Cotesia marginiventris, and Chelonus texanus, target the fall armyworm [5].  \n7. The fall armyworm's life cycle can be completed within 30 days during summer, and up to 60 days during spring and autumn, with winter cycles lasting 80 to 90 days [6]."
+    },
+    {
+      "q": "3 ways to manage root-knot nematodes",
+      "asked": 3,
+      "got": 3,
+      "answered": true,
+      "exact": true,
+      "honest_if_fewer": true,
+      "faithful": false,
+      "answer": "1. Use biocontrol agents such as Paecilomyces lilacinus, Pasteuria penetrans, and Juglone to control root-knot nematodes [1].  \n2. Apply certain saponins, which have shown effectiveness in trials, although more research is needed before they are commercially available [1].  \n3. Implement cultural practices that reduce nematode populations, such as avoiding deep-rooted, perennial crops where nematodes are difficult to control [3]."
+    },
+    {
+      "q": "5 symptoms of tomato yellow leaf curl virus",
+      "asked": 5,
+      "got": 5,
+      "answered": true,
+      "exact": true,
+      "honest_if_fewer": true,
+      "faithful": true,
+      "answer": "1. Severe stunting of the plant [1].  \n2. Reduction of leaf size and upward cupping/curling of leaves [1].  \n3. Chlorosis on leaves and flowers [1].  \n4. Reduction of fruit production [1].  \n5. The virus can also affect other plants such as peppers and beans, causing similar symptoms [1]."
+    },
+    {
+      "q": "Give me 8 points on the Green Revolution in India",
+      "asked": 8,
+      "got": 8,
+      "answered": true,
+      "exact": true,
+      "honest_if_fewer": true,
+      "faithful": true,
+      "answer": "1. The Green Revolution in India began in the 1960s and was led by agricultural scientist M. S. Swaminathan, with support from international donor agencies and the Government of India [1].  \n2. It was initiated in Punjab in late 1966-67 as part of a development program to address food shortages and improve agricultural productivity [2].  \n3. The Green Revolution aimed to counter frequent famines and low productivity by introducing modern agricultural technologies such as high-yielding crop varieties and fertilizers [2].  \n4. The Green Revolution led to significant increases in agricultural output, particularly in Punjab, which became known as India's breadbasket [4].  \n5. The government implemented policies such as subsidised fertiliser, credit, and assured procurement prices through the Food Corporation of India to support the Green Revolution [6].  \n6. The Green Revolution faced criticism for its adverse environmental and social consequences, including increased regional disparities between adopters and non-adopters [8].  \n7. Critics argue that the Green Revolution led to increased debt for small farmers due to the high costs of HYV seeds, irrigation systems, and pesticides [7].  \n8. Alternative farming methods, such as small subsistence farms and organic farming, have emerged as responses to the sustainability issues raised by the Green Revolution [3]."
+    }
+  ],
+  "follow": [
+    {
+      "q": "how is it spread?",
+      "standalone": "How is Magnaporthe grisea spread?",
+      "resolved": true,
+      "answered": true
+    },
+    {
+      "q": "which crop does it affect?",
+      "standalone": "Which crop does Karnal bunt affect?",
+      "resolved": true,
+      "answered": true
+    },
+    {
+      "q": "what does it damage?",
+      "standalone": "What does the pink bollworm damage?",
+      "resolved": true,
+      "answered": true
+    },
+    {
+      "q": "and how can it be managed?",
+      "standalone": "How can late blight of potato be managed?",
+      "resolved": true,
+      "answered": true
+    },
+    {
+      "q": "where is it native to?",
+      "standalone": "Where is the fall armyworm native to?",
+      "resolved": true,
+      "answered": true
+    },
+    {
+      "q": "which banana variety did it destroy?",
+      "standalone": "Which banana variety did Panama disease destroy?",
+      "resolved": true,
+      "answered": true
+    },
+    {
+      "q": "which tree does it come from?",
+      "standalone": "Which tree does neem oil come from?",
+      "resolved": true,
+      "answered": true
+    },
+    {
+      "q": "which insect spreads it?",
+      "standalone": "Which insect spreads citrus greening?",
+      "resolved": true,
+      "answered": true
+    }
+  ],
+  "control": [
+    {
+      "q": "What causes late blight of potato?",
+      "standalone": null,
+      "kept_topic": true,
+      "no_leak": true
+    },
+    {
+      "q": "How is tomato yellow leaf curl virus transmitted?",
+      "standalone": null,
+      "kept_topic": true,
+      "no_leak": true
+    },
+    {
+      "q": "What is crop rotation?",
+      "standalone": null,
+      "kept_topic": true,
+      "no_leak": true
+    },
+    {
+      "q": "Which insect spreads citrus greening disease?",
+      "standalone": null,
+      "kept_topic": true,
+      "no_leak": true
+    }
+  ],
+  "summary": {
+    "compare": {
+      "n": 12,
+      "answered": 1.0,
+      "table_ok": 1.0,
+      "faithful": 0.75
+    },
+    "count": {
+      "n": 10,
+      "answered": 1.0,
+      "exact_count": 1.0,
+      "exact_or_honest": 1.0,
+      "faithful": 0.9
+    },
+    "follow": {
+      "n": 8,
+      "resolved": 1.0,
+      "answered": 1.0
+    },
+    "control": {
+      "n": 4,
+      "kept_topic": 1.0,
+      "no_leak": 1.0
+    },
+    "minutes": 6.6
+  }
+}

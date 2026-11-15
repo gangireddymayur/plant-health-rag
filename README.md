@@ -52,7 +52,7 @@ I don't know based on the available articles.
 
 Measured on a test set I wrote from the articles: **124 answerable and 29 unanswerable questions**. Every third question is a development set; the other **102 questions were never used for any tuning**. (The first 65 questions are from the original 36-article version, unchanged; 88 were added when the corpus grew to 141 articles. The old results are in [`eval/archive_36_articles/`](eval/archive_36_articles).)
 
-### Answers (qwen3:8b answering, qwen3:14b checking)
+### Answers, concise style (qwen3:8b answering, qwen3:14b checking)
 
 | Measure | Test set (102 questions) | All 153 questions |
 |---|---|---|
@@ -64,6 +64,32 @@ Measured on a test set I wrote from the articles: **124 answerable and 29 unansw
 | Unanswerable questions answered anyway | 5% (1 of 20) | 3% (1 of 29) |
 
 The 29 unanswerable questions are 10 off-topic ones and 19 about farming topics the articles cannot answer (for example "What is the minimum support price of paddy this year?"). Fourteen were stopped by the similarity gate and fourteen refused by the model itself.
+
+### Concise vs detailed answers (same 153 questions)
+
+The chat page defaults to **Detailed** answers (short headings and cited bullets); the command line and the numbers above use **Concise**. I measured both on the same questions ([`eval/results_detailed.json`](eval/results_detailed.json)):
+
+| Measure (all 153 questions) | Concise | Detailed |
+|---|---|---|
+| Answer contains the key facts | 92% | 93% |
+| Cites the right article | 93% | 95% |
+| Unanswerable questions answered anyway | 1 of 29 | 1 of 29 |
+| **Fully supported by the cited passages (LLM checker)** | **95%** | **86%** |
+
+**Detailed answers cost about 9 points of faithfulness.** More sentences give the model more chances to add a detail the passage does not state, for example calling apple the "primary host" in cedar apple rust, which is backwards. The checker is a model from the same family as the answerer and is strict, so some flags are borderline, but the drop is real. The page has a **Concise** switch for the safer mode. I did not tune the detailed prompt to bring the number back up.
+
+### Chat features: comparison tables, exact point counts, chat memory
+
+A small test of the features themselves ([`eval/features.py`](eval/features.py), results in [`eval/features_results.json`](eval/features_results.json)):
+
+| Feature | Test | Result |
+|---|---|---|
+| Comparison table ("difference between A and B") | 12 comparisons | 12/12 answered with a 3-column table of 3 or more rows; **9/12 fully supported** by the checker |
+| Exact point count ("give me 5 points") | 10 requests (3 to 10 points) | 10/10 returned exactly the number asked for; 9/10 fully supported |
+| Follow-up questions | 8 pronoun follow-ups ("how is it spread?") | 8/8 rewritten with the correct topic and answered |
+| Not over-rewriting | 4 self-contained questions after an unrelated chat | 4/4 kept their own topic, nothing leaked from the earlier chat |
+
+Limits: these are small sets I wrote, so read them as a sanity check and not a benchmark. The count test never hit a case where the articles support fewer points than requested, so the "say so instead of inventing" fallback is in the prompt but not exercised by this set. Three of the twelve comparisons were flagged as not fully supported (for example, a row saying early blight "has never caused widespread famine").
 
 ### Search: does the right passage reach the top 5?
 
@@ -162,8 +188,15 @@ export PYTHONPATH=src
 A local chat interface that calls the same code as the command line (answers, citations and refusals are identical):
 
 <p align="center">
-  <img src="docs/chat-conversation.png" width="92%" alt="Chat with a cited answer and a declined out-of-scope question">
+  <img src="docs/chat-table.png" width="92%" alt="Comparison table with citations, source photos and follow-up questions">
 </p>
+<p align="center">
+  <img src="docs/chat-conversation.png" width="48%" alt="Detailed cited answer, then a follow-up that is rewritten using the chat">
+  <img src="docs/chat-decline.png" width="48%" alt="A farming question the articles cannot answer is declined">
+</p>
+
+Top: a comparison table where every cell carries a citation. Bottom left: a detailed answer, then a follow-up ("how can it be managed?") understood as "How can rice blast be managed?". Bottom right: a question the articles cannot answer is declined without asking the language model.
+
 
 - Chat history in a sidebar (saved in your browser only), new chat and delete
 - **Enter** to send, **Shift+Enter** for a new line
@@ -200,7 +233,7 @@ The test questions are in [`eval/questions.json`](eval/questions.json), with the
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
-28 unit tests cover chunking, rank fusion, prompt building, citation parsing and the evaluation metrics. They need no models, and CI runs them on every push. 15 more cover the chat page's small-talk routing and run when FastAPI is installed (`requirements-app.txt`).
+56 unit tests cover chunking, rank fusion, prompt building, citation parsing, the evaluation metrics, comparison and point-count detection, and the chat page's small-talk routing. They need no models. The 28 that do not need FastAPI run in CI on every push; the rest run when `requirements-app.txt` is installed.
 
 ---
 

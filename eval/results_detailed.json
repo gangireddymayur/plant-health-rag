@@ -1,0 +1,45 @@
+{
+  "questions": 153,
+  "answers": {
+    "model": "qwen3:8b",
+    "judge_model": "qwen3:14b",
+    "k": 5,
+    "mode": "dense",
+    "style": "detailed",
+    "min_similarity": 0.65,
+    "minutes": 27.3,
+    "dev": {
+      "answerable": 42,
+      "unanswerable": 9,
+      "correct_rate": 0.881,
+      "false_refusal_rate": 0.024,
+      "cites_gold_rate": 0.902,
+      "has_citation_rate": 1.0,
+      "faithful_rate": 0.805,
+      "correct_refusal_rate": 1.0,
+      "hallucination_rate_on_unanswerable": 0.0
+    },
+    "test": {
+      "answerable": 82,
+      "unanswerable": 20,
+      "correct_rate": 0.951,
+      "false_refusal_rate": 0.037,
+      "cites_gold_rate": 0.975,
+      "has_citation_rate": 1.0,
+      "faithful_rate": 0.886,
+      "correct_refusal_rate": 0.95,
+      "hallucination_rate_on_unanswerable": 0.05
+    },
+    "all": {
+      "answerable": 124,
+      "unanswerable": 29,
+      "correct_rate": 0.927,
+      "false_refusal_rate": 0.032,
+      "cites_gold_rate": 0.95,
+      "has_citation_rate": 1.0,
+      "faithful_rate": 0.858,
+      "correct_refusal_rate": 0.966,
+      "hallucination_rate_on_unanswerable": 0.034
+    }
+  }
+}
