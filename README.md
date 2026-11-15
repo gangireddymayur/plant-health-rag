@@ -151,23 +151,27 @@ export PYTHONPATH=src
 .venv/bin/python -m plantrag.evaluate --answers     # full answer test (about 10 minutes)
 ```
 
-### Web page
+### Chat page
 
-A small local chat page that calls the same code as the command line (answers, citations and refusals are identical):
+A local chat interface that calls the same code as the command line (answers, citations and refusals are identical):
+
+<p align="center">
+  <img src="docs/chat-conversation.png" width="92%" alt="Chat with a cited answer and a declined out-of-scope question">
+</p>
+
+- Chat history in a sidebar (saved in your browser only), new chat and delete
+- **Enter** to send, **Shift+Enter** for a new line
+- Model picker: lists the chat models installed in your Ollama
+- Voice input (mic button) using the browser's speech recognition
+- Every answer shows its status, match strength, time and model, with numbered citations and links to the source article
+- Each question is answered on its own; the assistant does not remember earlier turns
 
 ```bash
 uv pip install --python .venv/bin/python -r requirements-app.txt
 PYTHONPATH=src .venv/bin/python -m plantrag.app      # opens at http://127.0.0.1:7860
 ```
 
-<p align="center">
-  <img src="docs/ui-answer.png" width="48%" alt="Answer with numbered citations and source cards">
-  <img src="docs/ui-refusal.png" width="48%" alt="Out-of-scope question declined">
-</p>
-
-Left: a cited answer with source links. Right: a question outside the articles, declined without asking the language model.
-
-It needs Ollama running locally, so it is not deployable to serverless hosts such as Vercel. The first question takes a few extra seconds while the embedding model loads.
+It needs Ollama running locally, so it cannot be deployed to serverless hosts such as Vercel. The first question takes a few extra seconds while the embedding model loads. Voice input uses the browser's built-in speech recognition; in Chrome that sends the audio to Google, so it is the one optional part that is not fully local. Typing keeps everything on your machine.
 
 The test questions are in [`eval/questions.json`](eval/questions.json), with the evidence rules, the dev/test split and the per-question results in `eval/`.
 
