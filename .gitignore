@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# downloaded articles and the search index are rebuilt by the scripts (the manifest records exactly what was used)
+data/*
+!data/corpus_manifest.json
