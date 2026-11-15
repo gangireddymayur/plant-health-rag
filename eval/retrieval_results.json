@@ -1,0 +1,267 @@
+{
+  "questions": 65,
+  "retrieval": {
+    "bm25": {
+      "dev": {
+        "hit1": 0.353,
+        "hit3": 0.706,
+        "hit5": 0.765,
+        "mrr": 0.55,
+        "article5": 1.0,
+        "n": 17
+      },
+      "test": {
+        "hit1": 0.455,
+        "hit3": 0.758,
+        "hit5": 0.818,
+        "mrr": 0.624,
+        "article5": 1.0,
+        "n": 33
+      },
+      "all": {
+        "hit1": 0.42,
+        "hit3": 0.74,
+        "hit5": 0.8,
+        "mrr": 0.599,
+        "article5": 1.0,
+        "n": 50
+      },
+      "missed_at_5": [
+        "Where does the apple scab fungus spend the winter?",
+        "What do cedar apple rust symptoms look like on apple leaves?",
+        "What weather conditions favour the spread of late blight?",
+        "How can tomato yellow leaf curl virus be managed?",
+        "How does grape black rot survive between seasons?",
+        "How is black rot of apple controlled?",
+        "What does powdery mildew look like on leaves?",
+        "What is crop rotation?",
+        "What are the main principles of integrated pest management?",
+        "How do physical barriers help plants resist disease?"
+      ]
+    },
+    "dense": {
+      "dev": {
+        "hit1": 0.647,
+        "hit3": 0.765,
+        "hit5": 0.765,
+        "mrr": 0.716,
+        "article5": 0.941,
+        "n": 17
+      },
+      "test": {
+        "hit1": 0.727,
+        "hit3": 0.939,
+        "hit5": 1.0,
+        "mrr": 0.837,
+        "article5": 1.0,
+        "n": 33
+      },
+      "all": {
+        "hit1": 0.7,
+        "hit3": 0.88,
+        "hit5": 0.92,
+        "mrr": 0.796,
+        "article5": 0.98,
+        "n": 50
+      },
+      "missed_at_5": [
+        "Which historical event was caused by potato late blight?",
+        "How is black rot of apple controlled?",
+        "What are the main principles of integrated pest management?",
+        "How do physical barriers help plants resist disease?"
+      ]
+    },
+    "hybrid": {
+      "dev": {
+        "hit1": 0.529,
+        "hit3": 0.765,
+        "hit5": 0.765,
+        "mrr": 0.646,
+        "article5": 0.941,
+        "n": 17
+      },
+      "test": {
+        "hit1": 0.667,
+        "hit3": 0.879,
+        "hit5": 0.97,
+        "mrr": 0.787,
+        "article5": 1.0,
+        "n": 33
+      },
+      "all": {
+        "hit1": 0.62,
+        "hit3": 0.84,
+        "hit5": 0.9,
+        "mrr": 0.739,
+        "article5": 0.98,
+        "n": 50
+      },
+      "missed_at_5": [
+        "Where does the apple scab fungus spend the winter?",
+        "Which historical event was caused by potato late blight?",
+        "How is black rot of apple controlled?",
+        "What are the main principles of integrated pest management?",
+        "How do physical barriers help plants resist disease?"
+      ]
+    }
+  },
+  "similarity_scan": [
+    {
+      "threshold": 0.45,
+      "dev": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.0
+      },
+      "test": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.0
+      },
+      "all": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.0
+      }
+    },
+    {
+      "threshold": 0.5,
+      "dev": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.4
+      },
+      "test": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.2
+      },
+      "all": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.267
+      }
+    },
+    {
+      "threshold": 0.55,
+      "dev": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.4
+      },
+      "test": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.5
+      },
+      "all": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.467
+      }
+    },
+    {
+      "threshold": 0.6,
+      "dev": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.4
+      },
+      "test": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.6
+      },
+      "all": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.533
+      }
+    },
+    {
+      "threshold": 0.65,
+      "dev": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.6
+      },
+      "test": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.7
+      },
+      "all": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.667
+      }
+    },
+    {
+      "threshold": 0.7,
+      "dev": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.8
+      },
+      "test": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.9
+      },
+      "all": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.867
+      }
+    }
+  ],
+  "top_similarity_by_question": {
+    "q01": 0.885,
+    "q02": 0.774,
+    "q03": 0.752,
+    "q04": 0.776,
+    "q05": 0.812,
+    "q06": 0.778,
+    "q07": 0.87,
+    "q08": 0.806,
+    "q09": 0.77,
+    "q10": 0.819,
+    "q11": 0.819,
+    "q12": 0.879,
+    "q13": 0.866,
+    "q14": 0.835,
+    "q15": 0.806,
+    "q16": 0.825,
+    "q17": 0.85,
+    "q18": 0.811,
+    "q19": 0.83,
+    "q20": 0.897,
+    "q21": 0.829,
+    "q22": 0.895,
+    "q23": 0.799,
+    "q24": 0.858,
+    "q25": 0.859,
+    "q26": 0.813,
+    "q27": 0.719,
+    "q28": 0.767,
+    "q29": 0.761,
+    "q30": 0.823,
+    "q31": 0.765,
+    "q32": 0.784,
+    "q33": 0.795,
+    "q34": 0.784,
+    "q35": 0.828,
+    "q36": 0.809,
+    "q37": 0.91,
+    "q38": 0.91,
+    "q39": 0.856,
+    "q40": 0.856,
+    "q41": 0.843,
+    "q42": 0.821,
+    "q43": 0.825,
+    "q44": 0.868,
+    "q45": 0.863,
+    "q46": 0.893,
+    "q47": 0.754,
+    "q48": 0.845,
+    "q49": 0.885,
+    "q50": 0.828,
+    "q51": 0.729,
+    "q52": 0.689,
+    "q53": 0.597,
+    "q54": 0.618,
+    "q55": 0.635,
+    "q56": 0.668,
+    "q57": 0.651,
+    "q58": 0.757,
+    "q59": 0.467,
+    "q60": 0.549,
+    "q61": 0.469,
+    "q62": 0.53,
+    "q63": 0.548,
+    "q64": 0.46,
+    "q65": 0.452
+  }
+}

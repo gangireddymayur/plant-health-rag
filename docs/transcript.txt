@@ -1,0 +1,25 @@
+$ python -m plantrag.answer "Which insect carries citrus greening disease, and how does it spread it?"
+
+The citrus greening disease is carried by two species of psyllid insects: the Asian citrus psyllid Diaphorina citri and the African citrus psyllid Trioza erytreae [2]. The disease spreads when these insects feed on the sap of citrus plants, transmitting the bacteria Liberibacter spp. to the plant [4]. The transmission is most efficient during the young larval stage of the psyllid [1].
+
+  [1] Citrus greening disease > Transmission
+      https://en.wikipedia.org/wiki/Citrus_greening_disease
+  [2] Citrus greening disease > Introduction
+      https://en.wikipedia.org/wiki/Citrus_greening_disease
+  [4] Diaphorina citri > Damage > Citrus greening disease and other associations
+      https://en.wikipedia.org/wiki/Diaphorina_citri
+
+(answered, best similarity 0.821, 9.1 s)
+
+$ python -m plantrag.answer "What exact fungicide dose should I spray on tomato early blight in Telangana?"
+
+I don't know based on the available articles.
+
+(model_refused, best similarity 0.729, 6.2 s)
+
+$ python -m plantrag.answer "Who won the 2018 football World Cup?"
+
+I don't know based on the available articles.
+
+(out_of_scope, best similarity 0.467, 5.8 s)
+

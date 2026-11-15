@@ -51,7 +51,7 @@ def generate(prompt, model=DEFAULT_MODEL, timeout=300):
     return clean(r.json()["message"]["content"])
 
 
-def ask(question, retriever, model=DEFAULT_MODEL, k=5, mode="hybrid", min_similarity=0.55):
+def ask(question, retriever, model=DEFAULT_MODEL, k=5, mode="dense", min_similarity=0.65):
     t0 = time.time()
     top_sim = retriever._dense(question, 1)[0][1]
     passages = retriever.search(question, k=k, mode=mode)

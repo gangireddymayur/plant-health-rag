@@ -1,0 +1,966 @@
+[
+ {
+  "type": "answerable",
+  "gold_title": "Apple scab",
+  "question": "Which fungus causes apple scab?",
+  "must_contain": [
+   "Venturia inaequalis"
+  ],
+  "answer_keywords": [
+   [
+    "venturia inaequalis"
+   ]
+  ],
+  "id": "q01",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Apple scab",
+  "question": "Where does the apple scab fungus spend the winter?",
+  "must_contain": [
+   "overwinter"
+  ],
+  "answer_keywords": [
+   [
+    "leaves",
+    "leaf litter",
+    "fallen"
+   ]
+  ],
+  "id": "q02",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Gymnosporangium juniperi-virginianae",
+  "question": "Which two kinds of plants does cedar apple rust need to complete its life cycle?",
+  "must_contain": [
+   "juniper|cedar",
+   "apple"
+  ],
+  "answer_keywords": [
+   [
+    "apple"
+   ],
+   [
+    "juniper",
+    "cedar"
+   ]
+  ],
+  "gold_section": "Introduction|Disease cycle",
+  "id": "q03",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Gymnosporangium juniperi-virginianae",
+  "question": "What do cedar apple rust symptoms look like on apple leaves?",
+  "must_contain": [
+   "yellow|orange"
+  ],
+  "answer_keywords": [
+   [
+    "yellow",
+    "orange"
+   ]
+  ],
+  "id": "q04",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Alternaria solani",
+  "question": "What do early blight lesions on tomato leaves look like?",
+  "must_contain": [
+   "target|bullseye|concentric"
+  ],
+  "answer_keywords": [
+   [
+    "target",
+    "bullseye",
+    "bull's-eye",
+    "concentric"
+   ]
+  ],
+  "id": "q05",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Alternaria solani",
+  "question": "Besides tomato, which crop does early blight commonly affect?",
+  "must_contain": [
+   "potato"
+  ],
+  "answer_keywords": [
+   [
+    "potato"
+   ]
+  ],
+  "id": "q06",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Phytophthora infestans",
+  "question": "Which historical event was caused by potato late blight?",
+  "must_contain": [
+   "famine"
+  ],
+  "answer_keywords": [
+   [
+    "famine"
+   ]
+  ],
+  "id": "q07",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Phytophthora infestans",
+  "question": "What kind of organism is Phytophthora infestans?",
+  "must_contain": [
+   "oomycete"
+  ],
+  "answer_keywords": [
+   [
+    "oomycete",
+    "water mould",
+    "water mold"
+   ]
+  ],
+  "id": "q08",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Phytophthora infestans",
+  "question": "What weather conditions favour the spread of late blight?",
+  "must_contain": [
+   "humid|moist|cool|wet"
+  ],
+  "answer_keywords": [
+   [
+    "cool",
+    "moist",
+    "humid",
+    "wet"
+   ]
+  ],
+  "id": "q09",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Citrus greening disease",
+  "question": "Which insect spreads citrus greening disease?",
+  "must_contain": [
+   "psyllid"
+  ],
+  "answer_keywords": [
+   [
+    "psyllid"
+   ]
+  ],
+  "id": "q10",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Citrus greening disease",
+  "question": "Can citrus greening disease be cured?",
+  "must_contain": [
+   "cure|no known|incurable|no effective"
+  ],
+  "answer_keywords": [
+   [
+    "no",
+    "not",
+    "cannot",
+    "incurable"
+   ]
+  ],
+  "id": "q11",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Diaphorina citri",
+  "question": "Where is the Asian citrus psyllid found?",
+  "must_contain": [
+   "Asia"
+  ],
+  "answer_keywords": [
+   [
+    "asia"
+   ]
+  ],
+  "id": "q12",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Tomato yellow leaf curl virus",
+  "question": "How is tomato yellow leaf curl virus transmitted?",
+  "must_contain": [
+   "whitefl|Bemisia"
+  ],
+  "answer_keywords": [
+   [
+    "whitefl",
+    "bemisia"
+   ]
+  ],
+  "id": "q13",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Tomato yellow leaf curl virus",
+  "question": "What symptoms does tomato yellow leaf curl virus cause?",
+  "must_contain": [
+   "curl|cupp",
+   "yellow|chlorosis"
+  ],
+  "answer_keywords": [
+   [
+    "curl",
+    "cupp"
+   ],
+   [
+    "yellow",
+    "chlorosis"
+   ]
+  ],
+  "id": "q14",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Tomato yellow leaf curl virus",
+  "question": "How can tomato yellow leaf curl virus be managed?",
+  "must_contain": [
+   "resistan|insecticide|vector"
+  ],
+  "answer_keywords": [
+   [
+    "resistan",
+    "vector",
+    "whitefl",
+    "insecticide"
+   ]
+  ],
+  "gold_section": "Management",
+  "id": "q15",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Tomato mosaic virus",
+  "question": "How does tomato mosaic virus spread between plants?",
+  "must_contain": [
+   "seed|contact|mechanical|touch|tools|hands"
+  ],
+  "answer_keywords": [
+   [
+    "seed",
+    "contact",
+    "mechanical",
+    "touch",
+    "tools",
+    "hands",
+    "handling"
+   ]
+  ],
+  "id": "q16",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Tomato leaf mold",
+  "question": "Which fungus causes tomato leaf mold?",
+  "must_contain": [
+   "Passalora fulva|Cladosporium fulvum"
+  ],
+  "answer_keywords": [
+   [
+    "passalora",
+    "cladosporium"
+   ]
+  ],
+  "id": "q17",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Tomato leaf mold",
+  "question": "What humidity levels favour tomato leaf mold?",
+  "must_contain": [
+   "humidity"
+  ],
+  "answer_keywords": [
+   [
+    "humid"
+   ]
+  ],
+  "gold_section": "Environment",
+  "id": "q18",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Septoria lycopersici",
+  "question": "What do Septoria leaf spot lesions on tomato look like?",
+  "must_contain": [
+   "spot|lesion"
+  ],
+  "answer_keywords": [
+   [
+    "spot",
+    "lesion"
+   ]
+  ],
+  "id": "q19",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Black rot (grape disease)",
+  "question": "Which fungus causes black rot of grape?",
+  "must_contain": [
+   "Guignardia bidwellii|Phyllosticta"
+  ],
+  "answer_keywords": [
+   [
+    "guignardia",
+    "phyllosticta"
+   ]
+  ],
+  "id": "q20",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Black rot (grape disease)",
+  "question": "How does grape black rot survive between seasons?",
+  "must_contain": [
+   "overwinter|mummi"
+  ],
+  "answer_keywords": [
+   [
+    "mummi",
+    "overwinter",
+    "canes"
+   ]
+  ],
+  "id": "q21",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Black rot (grape disease)",
+  "question": "What cultural practices help control grape black rot?",
+  "must_contain": [
+   "prun|canopy|sanit|mummi|remov"
+  ],
+  "answer_keywords": [
+   [
+    "prun",
+    "canopy",
+    "sanit",
+    "remov",
+    "mummi"
+   ]
+  ],
+  "gold_section": "Cultural control|Control",
+  "id": "q22",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Corn grey leaf spot",
+  "question": "What does gray leaf spot of corn look like?",
+  "must_contain": [
+   "rectangular|grey|gray"
+  ],
+  "answer_keywords": [
+   [
+    "rectangular",
+    "gray",
+    "grey",
+    "tan"
+   ]
+  ],
+  "gold_section": "Host and symptoms",
+  "id": "q23",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Corn grey leaf spot",
+  "question": "How can gray leaf spot of corn be managed?",
+  "must_contain": [
+   "rotation|tillage|resistan"
+  ],
+  "answer_keywords": [
+   [
+    "rotation",
+    "tillage",
+    "resistan",
+    "hybrid"
+   ]
+  ],
+  "id": "q24",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Northern corn leaf blight",
+  "question": "What shape are the lesions of northern corn leaf blight?",
+  "must_contain": [
+   "cigar|elliptical|boat"
+  ],
+  "answer_keywords": [
+   [
+    "cigar",
+    "elliptical",
+    "boat"
+   ]
+  ],
+  "id": "q25",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Northern corn leaf blight",
+  "question": "Which fungus causes northern corn leaf blight?",
+  "must_contain": [
+   "Exserohilum turcicum|Setosphaeria turcica"
+  ],
+  "answer_keywords": [
+   [
+    "exserohilum",
+    "setosphaeria"
+   ]
+  ],
+  "id": "q26",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Puccinia sorghi",
+  "question": "What are the symptoms of common rust on corn?",
+  "must_contain": [
+   "pustule"
+  ],
+  "answer_keywords": [
+   [
+    "pustule"
+   ]
+  ],
+  "id": "q27",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Diplocarpon earlianum",
+  "question": "What does strawberry leaf scorch look like?",
+  "must_contain": [
+   "purple"
+  ],
+  "answer_keywords": [
+   [
+    "purple"
+   ]
+  ],
+  "id": "q28",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Diplocarpon earlianum",
+  "question": "How does the strawberry leaf scorch fungus survive the winter?",
+  "must_contain": [
+   "overwinter"
+  ],
+  "answer_keywords": [
+   [
+    "leaves",
+    "infected",
+    "debris",
+    "overwinter"
+   ]
+  ],
+  "id": "q29",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Corynespora cassiicola",
+  "question": "Which crops can Corynespora cassiicola infect?",
+  "must_contain": [
+   "tomato|cucumber|soybean|papaya|rubber"
+  ],
+  "answer_keywords": [
+   [
+    "tomato",
+    "cucumber",
+    "soybean",
+    "papaya",
+    "rubber"
+   ]
+  ],
+  "id": "q30",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Botryosphaeria obtusa",
+  "question": "How is black rot of apple controlled?",
+  "must_contain": [
+   "prun|remov|sanit|fungicide"
+  ],
+  "answer_keywords": [
+   [
+    "prun",
+    "remov",
+    "sanit",
+    "fungicide"
+   ]
+  ],
+  "id": "q31",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Erysiphaceae",
+  "question": "What does powdery mildew look like on leaves?",
+  "must_contain": [
+   "white|powder"
+  ],
+  "answer_keywords": [
+   [
+    "white",
+    "powder"
+   ]
+  ],
+  "gold_section": "Description|Identification",
+  "id": "q32",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Erysiphaceae",
+  "question": "What weather conditions favour powdery mildew?",
+  "must_contain": [
+   "humid|dry|warm|temperature"
+  ],
+  "answer_keywords": [
+   [
+    "humid",
+    "dry",
+    "warm",
+    "temperature"
+   ]
+  ],
+  "id": "q33",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Tetranychus urticae",
+  "question": "What do two-spotted spider mites feed on?",
+  "must_contain": [
+   "sap|cell|leaves|plants"
+  ],
+  "answer_keywords": [
+   [
+    "sap",
+    "cell",
+    "leaves",
+    "plants"
+   ]
+  ],
+  "id": "q34",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Whitefly",
+  "question": "How do whiteflies damage plants?",
+  "must_contain": [
+   "sap|honeydew|virus"
+  ],
+  "answer_keywords": [
+   [
+    "sap",
+    "honeydew",
+    "virus"
+   ]
+  ],
+  "id": "q35",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Whitefly",
+  "question": "How do whiteflies spread plant viruses?",
+  "must_contain": [
+   "virus"
+  ],
+  "answer_keywords": [
+   [
+    "virus"
+   ]
+  ],
+  "id": "q36",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Crop rotation",
+  "question": "How does crop rotation help reduce pests and diseases?",
+  "must_contain": [
+   "pest|disease"
+  ],
+  "answer_keywords": [
+   [
+    "pest",
+    "disease"
+   ]
+  ],
+  "id": "q37",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Crop rotation",
+  "question": "What is crop rotation?",
+  "must_contain": [
+   "sequen|success|series|alternat"
+  ],
+  "answer_keywords": [
+   [
+    "sequen",
+    "success",
+    "series",
+    "alternat",
+    "different crops"
+   ]
+  ],
+  "gold_section": "Introduction",
+  "id": "q38",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Fungicide",
+  "question": "What are fungicides used for?",
+  "must_contain": [
+   "kill|inhibit|control|fung"
+  ],
+  "answer_keywords": [
+   [
+    "kill",
+    "inhibit",
+    "control",
+    "fung"
+   ]
+  ],
+  "gold_section": "Introduction",
+  "id": "q39",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Integrated pest management",
+  "question": "What are the main principles of integrated pest management?",
+  "must_contain": [
+   "prevention|monitor|threshold|identif"
+  ],
+  "answer_keywords": [
+   [
+    "prevention",
+    "monitor",
+    "threshold",
+    "identif"
+   ]
+  ],
+  "gold_section": "Principles|Introduction",
+  "id": "q40",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Mulch",
+  "question": "How does mulch help plants and soil?",
+  "must_contain": [
+   "moisture|weed|temperature"
+  ],
+  "answer_keywords": [
+   [
+    "moisture",
+    "weed",
+    "temperature"
+   ]
+  ],
+  "gold_section": "Introduction|Uses",
+  "id": "q41",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Plant disease resistance",
+  "question": "What is pattern-triggered immunity in plants?",
+  "must_contain": [
+   "pattern"
+  ],
+  "answer_keywords": [
+   [
+    "pattern",
+    "recogni"
+   ]
+  ],
+  "id": "q42",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Plant disease resistance",
+  "question": "How do physical barriers help plants resist disease?",
+  "must_contain": [
+   "cuticle|wax|cell wall|bark"
+  ],
+  "answer_keywords": [
+   [
+    "cuticle",
+    "wax",
+    "cell wall",
+    "bark"
+   ]
+  ],
+  "id": "q43",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Plant virus",
+  "question": "How do insects transmit plant viruses?",
+  "must_contain": [
+   "aphid|whitefl|insect|vector"
+  ],
+  "answer_keywords": [
+   [
+    "aphid",
+    "whitefl",
+    "insect",
+    "vector"
+   ]
+  ],
+  "id": "q44",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Plant disease epidemiology",
+  "question": "What three elements are needed for a plant disease epidemic?",
+  "must_contain": [
+   "host",
+   "pathogen|environment"
+  ],
+  "answer_keywords": [
+   [
+    "host"
+   ],
+   [
+    "pathogen"
+   ],
+   [
+    "environment"
+   ]
+  ],
+  "id": "q45",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Leaf spot",
+  "question": "What can cause leaf spots on plants?",
+  "must_contain": [
+   "fung|bacteri|virus"
+  ],
+  "answer_keywords": [
+   [
+    "fung",
+    "bacteri",
+    "virus"
+   ]
+  ],
+  "gold_section": "Introduction|Causes|Description",
+  "id": "q46",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Oomycete",
+  "question": "Why are oomycetes not true fungi?",
+  "must_contain": [
+   "cellulose|not.*fung|fungus-like|water mould|water mold"
+  ],
+  "answer_keywords": [
+   [
+    "cellulose",
+    "not",
+    "fungus-like",
+    "water mould",
+    "water mold"
+   ]
+  ],
+  "id": "q47",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Rust (fungus)",
+  "question": "What are rust fungi?",
+  "must_contain": [
+   "rust"
+  ],
+  "answer_keywords": [
+   [
+    "fung",
+    "pathogen",
+    "plant"
+   ]
+  ],
+  "gold_section": "Introduction",
+  "id": "q48",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Bacterial leaf spot of peppers and tomato",
+  "question": "Which bacteria cause bacterial spot of tomato and pepper?",
+  "must_contain": [
+   "Xanthomonas"
+  ],
+  "answer_keywords": [
+   [
+    "xanthomonas"
+   ]
+  ],
+  "id": "q49",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Xanthomonas arboricola pv. pruni",
+  "question": "Which fruit trees does Xanthomonas arboricola pv. pruni affect?",
+  "must_contain": [
+   "peach|plum|cherry|apricot|Prunus"
+  ],
+  "answer_keywords": [
+   [
+    "peach",
+    "plum",
+    "cherry",
+    "apricot",
+    "prunus",
+    "stone fruit"
+   ]
+  ],
+  "id": "q50",
+  "split": "test"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "What exact fungicide dose should I spray on tomato early blight in Telangana?",
+  "id": "q51",
+  "split": "test"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "How many tons of potatoes were lost to late blight in India last year?",
+  "id": "q52",
+  "split": "dev"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "What is the price of copper fungicide per litre in Hyderabad?",
+  "id": "q53",
+  "split": "test"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "Which tomato variety grows best in Telangana's climate?",
+  "id": "q54",
+  "split": "test"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "What is the best time of day to spray neem oil on chilli plants?",
+  "id": "q55",
+  "split": "dev"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "How much nitrogen fertiliser does an apple tree need each year?",
+  "id": "q56",
+  "split": "test"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "Which pesticide brands has the Indian government approved against citrus greening?",
+  "id": "q57",
+  "split": "test"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "How many days should I wait to harvest grapes after spraying a fungicide?",
+  "id": "q58",
+  "split": "dev"
+ },
+ {
+  "type": "off_topic",
+  "question": "Who won the 2018 football World Cup?",
+  "id": "q59",
+  "split": "test"
+ },
+ {
+  "type": "off_topic",
+  "question": "How do I reset my home router password?",
+  "id": "q60",
+  "split": "test"
+ },
+ {
+  "type": "off_topic",
+  "question": "What is the capital city of Australia?",
+  "id": "q61",
+  "split": "dev"
+ },
+ {
+  "type": "off_topic",
+  "question": "How many calories are in a banana?",
+  "id": "q62",
+  "split": "test"
+ },
+ {
+  "type": "off_topic",
+  "question": "Explain how a transformer neural network works.",
+  "id": "q63",
+  "split": "test"
+ },
+ {
+  "type": "off_topic",
+  "question": "What is a good recipe for chicken biryani?",
+  "id": "q64",
+  "split": "dev"
+ },
+ {
+  "type": "off_topic",
+  "question": "Who is the current Prime Minister of India?",
+  "id": "q65",
+  "split": "test"
+ }
+]

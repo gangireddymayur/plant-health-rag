@@ -10,10 +10,7 @@ import json
 import re
 from pathlib import Path
 
-import chromadb
-from rank_bm25 import BM25Okapi
-
-from .index import COLLECTION, EMBED_MODEL, QUERY_PREFIX, device
+from .config import COLLECTION, EMBED_MODEL, QUERY_PREFIX, device
 
 STOP = set("a an and are as at be by can do does for from how in is it of on or that the this to was what when where which who why will with you your".split())
 
@@ -33,6 +30,9 @@ def rrf(rankings, k=60):
 
 class Retriever:
     def __init__(self, chunks_file="data/chunks.jsonl", index_dir="data/index", model_name=EMBED_MODEL):
+        import chromadb  # imported here so the pure helpers above load without the heavy libraries
+        from rank_bm25 import BM25Okapi
+
         self.chunks = [json.loads(line) for line in Path(chunks_file).read_text().splitlines() if line.strip()]
         self.by_id = {c["id"]: c for c in self.chunks}
         self.bm25 = BM25Okapi([tokenize(f"{c['title']} {c['section']} {c['text']}") for c in self.chunks])

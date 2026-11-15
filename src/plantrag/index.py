@@ -4,19 +4,10 @@ import json
 from pathlib import Path
 
 import chromadb
-import torch
 from sentence_transformers import SentenceTransformer
 
 from .chunk import chunk_article, embedding_text
-
-EMBED_MODEL = "BAAI/bge-small-en-v1.5"  # small, MIT-licensed, strong at retrieval
-QUERY_PREFIX = "Represent this sentence for searching relevant passages: "
-COLLECTION = "plant_health"
-
-
-def device():
-    return "mps" if torch.backends.mps.is_available() else ("cuda" if torch.cuda.is_available() else "cpu")
-
+from .config import COLLECTION, EMBED_MODEL, device
 
 def load_chunks(corpus_dir):
     chunks = []
