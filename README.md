@@ -164,6 +164,7 @@ A local chat interface that calls the same code as the command line (answers, ci
 - Model picker: lists the chat models installed in your Ollama
 - Voice input (mic button) using the browser's speech recognition
 - Every answer shows its status, match strength, time and model, with numbered citations and links to the source article
+- Greetings and chit-chat ("hi", "thanks", "what can you do?") get a fixed friendly reply with no language model involved, so nothing can be made up; factual questions still go through the cited path, and unrelated ones are declined
 - Each question is answered on its own; the assistant does not remember earlier turns
 
 ```bash
@@ -189,7 +190,7 @@ The test questions are in [`eval/questions.json`](eval/questions.json), with the
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
-28 unit tests cover chunking, rank fusion, prompt building, citation parsing and the evaluation metrics. They need no models, and CI runs them on every push.
+28 unit tests cover chunking, rank fusion, prompt building, citation parsing and the evaluation metrics. They need no models, and CI runs them on every push. 15 more cover the chat page's small-talk routing and run when FastAPI is installed (`requirements-app.txt`).
 
 ---
 

@@ -156,8 +156,9 @@ function renderHistory(){
 }
 function botHtml(res){
   if(res.error) return `<div class="bot"><div class="meta"><span class="pill err">Error</span></div><div class="card error"><p class="answer">${esc(res.error)}</p><p class="hint">Check that Ollama is running and the selected model is installed.</p></div></div>`;
+  if(res.reason==="small_talk") return `<div class="bot"><div class="card"><p class="answer">${esc(res.answer)}</p></div></div>`;
   const ok = !res.abstained, pct = Math.max(0, Math.min(100, Math.round(res.top_similarity*100)));
-  const hint = res.reason==="out_of_scope" ? "This question is outside the 36 plant-health articles, so the language model was not asked."
+  const hint = res.reason==="out_of_scope" ? "This is outside my 36 plant-health articles, so I didn’t ask the language model. Try asking how a plant disease spreads or what causes it."
              : res.reason==="model_refused" ? "The retrieved passages did not contain the answer, so the model declined instead of guessing." : "";
   const sources = (res.sources||[]).map(s => `<a class="source" href="${esc(s.url)}" target="_blank" rel="noopener"><span class="num">${s.n}</span><span class="src-text"><span class="src-title">${esc(s.title)}</span><span class="src-sec">${esc(s.section)}</span></span><span class="src-open">Wikipedia ↗</span></a>`).join("");
   return `<div class="bot">

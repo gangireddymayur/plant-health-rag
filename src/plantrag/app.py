@@ -4,6 +4,7 @@ A small FastAPI server: it serves one HTML page (src/plantrag/web/index.html) an
 The page calls the same `ask()` function as the command line, so answers, citations and
 refusals are identical. Chat history is kept in the browser (localStorage), never on a server.
 """
+import re
 import threading
 from pathlib import Path
 
@@ -30,6 +31,32 @@ def retriever():
         if _retriever is None:
             _retriever = Retriever()
         return _retriever
+
+
+INTRO = ("I'm Plant Health RAG. I answer questions about plant diseases, pests and crop protection "
+         "using 36 Wikipedia articles, and I cite my sources. Try asking how a disease spreads or what causes it.")
+_SMALLTALK = [
+    (r"(hi+|hello+|hey+|hiya|yo|hola|namaste|good (morning|afternoon|evening)|greetings)( (there|bot|everyone))?",
+     "Hi! " + INTRO),
+    (r"(how are you|how are you doing|how's it going|whats up|what's up|sup)",
+     "Doing well, thanks for asking! " + INTRO),
+    (r"(who are you|what are you|what is this|what can you do|what do you do|help|how do you work|how does this work)",
+     INTRO + " If the articles don't contain the answer, I say so instead of guessing."),
+    (r"(thanks|thank you|thank u|thx|ty|cheers|great|awesome|nice|cool|ok|okay)( a lot| so much)?",
+     "You're welcome! Ask me another plant-health question any time."),
+    (r"(bye|goodbye|see you|see ya|good night|cya)",
+     "Goodbye! Come back with more plant-health questions."),
+]
+
+
+def small_talk(question):
+    """A fixed, friendly reply for greetings and chit-chat, or None. No language model is involved,
+    so nothing can be made up; factual questions never match and go to the cited RAG path."""
+    q = re.sub(r"[^\w\s']", "", question.lower()).strip()
+    for pattern, reply in _SMALLTALK:
+        if re.fullmatch(pattern, q):
+            return reply
+    return None
 
 
 class Question(BaseModel):
@@ -62,6 +89,10 @@ def ask_endpoint(body: Question):
         raise HTTPException(400, "Empty question")
     if len(question) > 1000:
         raise HTTPException(400, "Question is too long (max 1000 characters)")
+    reply = small_talk(question)
+    if reply:
+        return {"question": question, "answer": reply, "reason": "small_talk", "abstained": False,
+                "top_similarity": 0.0, "seconds": 0.0, "model": body.model, "sources": [], "cited": []}
     try:
         return ask(question, retriever(), body.model)
     except requests.RequestException as e:
