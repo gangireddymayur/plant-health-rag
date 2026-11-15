@@ -151,6 +151,17 @@ export PYTHONPATH=src
 .venv/bin/python -m plantrag.evaluate --answers     # full answer test (about 10 minutes)
 ```
 
+### Web page
+
+A small local chat page that calls the same code as the command line (answers, citations and refusals are identical):
+
+```bash
+uv pip install --python .venv/bin/python -r requirements-app.txt
+PYTHONPATH=src .venv/bin/python -m plantrag.app      # opens at http://127.0.0.1:7860
+```
+
+It needs Ollama running locally, so it is not deployable to serverless hosts such as Vercel. The first question takes a few extra seconds while the embedding model loads.
+
 The test questions are in [`eval/questions.json`](eval/questions.json), with the evidence rules, the dev/test split and the per-question results in `eval/`.
 
 ## Limitations
