@@ -7,7 +7,7 @@
 [![CI](https://github.com/gangireddymayur/plant-health-rag/actions/workflows/ci.yml/badge.svg)](https://github.com/gangireddymayur/plant-health-rag/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.12-3776ab?logo=python&logoColor=white)
 ![Local](https://img.shields.io/badge/runs-100%25%20locally-1fbf8a)
-![Tests](https://img.shields.io/badge/unit%20tests-28-blue)
+![Tests](https://img.shields.io/badge/unit%20tests-34-blue)
 
 </div>
 
@@ -233,7 +233,7 @@ The test questions are in [`eval/questions.json`](eval/questions.json), with the
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
-56 unit tests cover chunking, rank fusion, prompt building, citation parsing, the evaluation metrics, comparison and point-count detection, and the chat page's small-talk routing. They need no models. The 28 that do not need FastAPI run in CI on every push; the rest run when `requirements-app.txt` is installed.
+34 unit tests cover chunking, rank fusion, prompt building, citation parsing, the evaluation metrics, comparison and point-count detection, and the chat page's small-talk routing. They need no models. CI runs them on every push (32 run there; the 2 small-talk tests are skipped unless FastAPI from `requirements-app.txt` is installed).
 
 ---
 
