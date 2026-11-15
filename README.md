@@ -160,6 +160,13 @@ uv pip install --python .venv/bin/python -r requirements-app.txt
 PYTHONPATH=src .venv/bin/python -m plantrag.app      # opens at http://127.0.0.1:7860
 ```
 
+<p align="center">
+  <img src="docs/ui-answer.png" width="48%" alt="Answer with numbered citations and source cards">
+  <img src="docs/ui-refusal.png" width="48%" alt="Out-of-scope question declined">
+</p>
+
+Left: a cited answer with source links. Right: a question outside the articles, declined without asking the language model.
+
 It needs Ollama running locally, so it is not deployable to serverless hosts such as Vercel. The first question takes a few extra seconds while the embedding model loads.
 
 The test questions are in [`eval/questions.json`](eval/questions.json), with the evidence rules, the dev/test split and the per-question results in `eval/`.
