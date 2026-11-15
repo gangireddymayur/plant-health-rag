@@ -110,10 +110,10 @@ def judge(passages, answer, model):
     return (m.group(1).upper() == "YES" if m else None), reply
 
 
-def answer_report(retriever, questions, model, judge_model, k, min_similarity, out_path, mode="dense"):
+def answer_report(retriever, questions, model, judge_model, k, min_similarity, out_path, mode="dense", style="concise"):
     rows = []
     for i, q in enumerate(questions, 1):
-        res = ask(q["question"], retriever, model=model, k=k, mode=mode, min_similarity=min_similarity)
+        res = ask(q["question"], retriever, model=model, k=k, mode=mode, min_similarity=min_similarity, style=style)
         row = {"id": q["id"], "split": q["split"], "type": q["type"], "question": q["question"], "answer": res["answer"],
                "abstained": res["abstained"], "reason": res["reason"], "top_similarity": res["top_similarity"], "cited": res["cited"]}
         if q["type"] == "answerable":
@@ -156,6 +156,8 @@ def main():
     ap.add_argument("--min-similarity", type=float, default=0.65)
     ap.add_argument("--mode", choices=MODES, default="dense")
     ap.add_argument("--out", default="eval/results.json")
+    ap.add_argument("--answers-out", default="eval/answers.jsonl")
+    ap.add_argument("--style", choices=["concise", "detailed"], default="concise")
     args = ap.parse_args()
     questions = json.load(open(args.questions))
     retriever = Retriever()
@@ -165,8 +167,8 @@ def main():
         results["similarity_scan"], results["top_similarity_by_question"] = similarity_scan(retriever, questions)
     if args.answers:
         t0 = time.time()
-        summary, _ = answer_report(retriever, questions, args.model, args.judge_model, args.k, args.min_similarity, "eval/answers.jsonl", args.mode)
-        results["answers"] = {"model": args.model, "judge_model": args.judge_model, "k": args.k, "mode": args.mode, "min_similarity": args.min_similarity,
+        summary, _ = answer_report(retriever, questions, args.model, args.judge_model, args.k, args.min_similarity, args.answers_out, args.mode, args.style)
+        results["answers"] = {"model": args.model, "judge_model": args.judge_model, "k": args.k, "mode": args.mode, "style": args.style, "min_similarity": args.min_similarity,
                               "minutes": round((time.time() - t0) / 60, 1), **summary}
     Path(args.out).write_text(json.dumps(results, indent=2))
     print(json.dumps({k: v for k, v in results.items() if k != "top_similarity_by_question"}, indent=2))

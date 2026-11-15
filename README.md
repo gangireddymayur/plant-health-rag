@@ -171,14 +171,18 @@ A local chat interface that calls the same code as the command line (answers, ci
 - Voice input (mic button) using the browser's speech recognition
 - Every answer shows its status, match strength, time and model, with numbered citations and links to the source article
 - Greetings and chit-chat ("hi", "thanks", "what can you do?") get a fixed friendly reply with no language model involved, so nothing can be made up; factual questions still go through the cited path, and unrelated ones are declined
-- Each question is answered on its own; the assistant does not remember earlier turns
+- **Detailed answers** with short headings and cited bullet points (or a **Concise** mode), switchable in the header
+- **Comparison tables:** "difference between A and B" retrieves passages for each topic separately and answers as a table, writing "Not stated in the articles" where a cell has no support
+- **Exact point counts:** "give me 5 points" returns 5 numbered points, or says the articles support fewer instead of inventing any
+- **Chat memory:** a follow-up such as "how can it be managed?" is rewritten into a standalone question using the recent chat, and the rewrite is shown as "Understood as..."
+- **Evidence:** each source card has a photo from the Wikipedia article, a "Show passage" button with the exact text used, and suggested follow-up questions
 
 ```bash
 uv pip install --python .venv/bin/python -r requirements-app.txt
 PYTHONPATH=src .venv/bin/python -m plantrag.app      # opens at http://127.0.0.1:7860
 ```
 
-It needs Ollama running locally, so it cannot be deployed to serverless hosts such as Vercel. The first question takes a few extra seconds while the embedding model loads. Voice input uses the browser's built-in speech recognition; in Chrome that sends the audio to Google, so it is the one optional part that is not fully local. Typing keeps everything on your machine.
+It needs Ollama running locally, so it cannot be deployed to serverless hosts such as Vercel. The first question takes a few extra seconds while the embedding model loads. Two optional parts are not fully local: voice input uses the browser's speech recognition (in Chrome that sends audio to Google), and the article photos on source cards are fetched from Wikimedia. Typing questions keeps the question and the answer on your machine.
 
 The test questions are in [`eval/questions.json`](eval/questions.json), with the evidence rules, the dev/test split and the per-question results in `eval/`.
 

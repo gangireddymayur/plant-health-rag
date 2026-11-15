@@ -70,14 +70,35 @@ header h1{font-size:15px;margin:0;font-weight:700}
 .bar{width:48px;height:5px;border-radius:5px;background:#e2e8f0;overflow:hidden;display:inline-block}.bar i{display:block;height:100%;background:var(--accent)}
 .card{background:#fff;border:1px solid var(--line);border-radius:4px 18px 18px 18px;padding:18px 22px;box-shadow:0 6px 24px rgba(15,23,42,.045)}
 .card.refusal{border-left:4px solid var(--warn)}.card.error{border-left:4px solid #ef4444}
-.answer{font-size:16px;line-height:1.7;margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.answer{font-size:16px;line-height:1.7;margin:0;overflow-wrap:anywhere}
+.rich p{margin:0 0 10px}.rich p:last-child{margin-bottom:0}
+.rich strong{font-weight:700}
+.rich ul,.rich ol{margin:4px 0 12px;padding-left:22px}.rich li{margin:5px 0;line-height:1.65}
+.rich ul+p strong:only-child{display:block}
+.rich p>strong:only-child{display:block;margin-top:14px;color:var(--accent-d);font-size:13.5px;text-transform:uppercase;letter-spacing:.6px}
+.rich p:first-child>strong:only-child{margin-top:0}
+.tbl-wrap{overflow-x:auto;margin:4px -6px 12px;padding:0 6px}
+table{border-collapse:separate;border-spacing:0;width:100%;font-size:14.5px;line-height:1.55;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th{background:var(--accent-l);color:var(--accent-d);text-align:left;font-weight:700;padding:10px 14px;border-bottom:1px solid var(--line)}
+td{padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}td.aspect{font-weight:700;background:#fafcfb;white-space:nowrap;color:#334155}
+td em,li em,p em{font-style:italic}
+.understood{font-size:12.5px;color:var(--muted);margin:-2px 0 9px}.understood b{color:var(--ink);font-weight:600}
+.fu-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;align-items:center}.fu-row>span{font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.6px}
+.fu{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 13px;font-size:13px;color:#334155;transition:.15s}
+.fu:hover{border-color:var(--accent);color:var(--accent-d);background:#f0faf5}
 .hint{font-size:13.5px;color:var(--muted);margin:10px 0 0}
 sup.cite{display:inline-block;background:var(--accent);color:#fff;font-size:10.5px;font-weight:700;min-width:17px;height:17px;line-height:17px;text-align:center;border-radius:6px;margin:0 2px;vertical-align:2px;font-family:inherit}
 .sources{display:grid;gap:8px;margin-top:12px}
-a.source{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;text-decoration:none;transition:.15s}
-a.source:hover{border-color:var(--accent);box-shadow:0 5px 16px rgba(15,157,107,.12)}
+.source{display:flex;flex-wrap:wrap;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;transition:.15s}
+.source:hover{border-color:var(--accent);box-shadow:0 5px 16px rgba(15,157,107,.12)}
+.thumb{width:46px;height:46px;border-radius:9px;object-fit:cover;flex:0 0 46px;background:#eef2f1}
+.src-open{text-decoration:none}
+.ev{border:none;background:#eef2f1;color:#475569;font-size:12px;font-weight:600;border-radius:8px;padding:5px 10px}.ev:hover{background:var(--accent-l);color:var(--accent-d)}
+.passage{flex:1 0 100%;font-size:13.5px;line-height:1.65;color:#334155;background:#f8faf9;border-left:3px solid var(--accent);border-radius:6px;padding:10px 14px;margin-top:2px}
+.passage small{display:block;color:var(--muted);margin-top:6px;font-size:12px}
 .num{flex:0 0 24px;height:24px;border-radius:7px;background:var(--accent);color:#fff;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center}
-.src-text{flex:1;min-width:0;display:flex;flex-direction:column}
+.src-text{flex:1;min-width:140px;display:flex;flex-direction:column}
 .src-title{color:var(--ink);font-weight:700;font-size:13.5px}.src-sec{color:var(--muted);font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .src-open{color:var(--accent-d);font-size:12.5px;font-weight:600;white-space:nowrap}
 .actions{margin-top:8px}.actions button{border:none;background:none;color:var(--muted);font-size:12.5px;padding:4px 8px;border-radius:8px}
@@ -116,7 +137,7 @@ kbd{background:#eef2f1;border-radius:5px;padding:1px 6px;font-family:inherit;fon
 <main>
   <header>
     <h1><span class="status-dot" id="dot"></span><span id="title">New chat</span></h1>
-    <div class="model"><label for="model">Model</label><select id="model"></select></div>
+    <div class="model"><label for="style">Answer</label><select id="style"><option value="detailed">Detailed</option><option value="concise">Concise</option></select><label for="model" style="margin-left:6px">Model</label><select id="model"></select></div>
   </header>
   <div id="scroll"><div id="thread"></div></div>
   <footer>
@@ -125,7 +146,7 @@ kbd{background:#eef2f1;border-radius:5px;padding:1px 6px;font-family:inherit;fon
       <button class="icon-btn" id="mic" title="Voice input"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></button>
       <button class="icon-btn" id="send" title="Send"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
     </div>
-    <div class="hintbar"><span><kbd>Enter</kbd> to send · <kbd>Shift</kbd>+<kbd>Enter</kbd> new line</span><span>Informational only, not agronomic advice. Each question is answered on its own.</span></div>
+    <div class="hintbar"><span><kbd>Enter</kbd> to send · <kbd>Shift</kbd>+<kbd>Enter</kbd> new line</span><span>Informational only, not agronomic advice. I remember this chat for follow-up questions.</span></div>
   </footer>
 </main>
 
@@ -133,8 +154,8 @@ kbd{background:#eef2f1;border-radius:5px;padding:1px 6px;font-family:inherit;fon
 const $ = s => document.querySelector(s);
 const EXAMPLES = [
   ["Cited answer", "Which insect carries citrus greening disease, and how does it spread it?"],
-  ["Cited answer · India", "Which fungus causes rice blast, and how does it spread?"],
-  ["Cited answer · India", "How does Karnal bunt affect wheat?"],
+  ["Comparison table", "What is the difference between early blight and late blight?"],
+  ["Exactly 5 points · India", "Give me 5 points on how rice blast develops"],
   ["Should decline", "What exact fungicide dose should I spray on tomato early blight in Telangana?"],
 ];
 const KEY = "plantrag.chats", MKEY = "plantrag.model";
@@ -142,6 +163,30 @@ let chats = [], activeId = null, busy = false;
 
 const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const withCites = s => esc(s).replace(/\[(\d+)\]/g, '<sup class="cite">$1</sup>');
+function inline(t){
+  let h = esc(t).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/(^|[^*])\*([^*\n]+?)\*(?!\*)/g, "$1<em>$2</em>");
+  return h.replace(/\[(\d+)\]/g, '<sup class="cite">$1</sup>');
+}
+function rich(text){
+  const lines = String(text).replace(/\r/g, "").split("\n"); let out = "", i = 0;
+  const isBullet = l => /^\s*[-*•]\s+/.test(l), isNum = l => /^\s*\d+[.)]\s+/.test(l);
+  while(i < lines.length){
+    const l = lines[i];
+    if(/^\s*\|/.test(l)){
+      const rows = []; while(i < lines.length && /^\s*\|/.test(lines[i])){ rows.push(lines[i]); i++; }
+      const cells = r => r.trim().replace(/^\||\|$/g, "").split("|").map(c => c.trim());
+      const parsed = rows.filter(r => !/^\s*\|?[\s:\-|]+\|?\s*$/.test(r)).map(cells);
+      if(parsed.length) out += '<div class="tbl-wrap"><table><thead><tr>' + parsed[0].map(c => "<th>" + inline(c) + "</th>").join("") + "</tr></thead><tbody>"
+        + parsed.slice(1).map(r => "<tr>" + r.map((c, j) => "<td" + (j === 0 ? ' class="aspect"' : "") + ">" + inline(c) + "</td>").join("") + "</tr>").join("") + "</tbody></table></div>";
+      continue;
+    }
+    if(isBullet(l)){ const it = []; while(i < lines.length && isBullet(lines[i])){ it.push(lines[i].replace(/^\s*[-*•]\s+/, "")); i++; } out += "<ul>" + it.map(x => "<li>" + inline(x) + "</li>").join("") + "</ul>"; continue; }
+    if(isNum(l)){ const it = []; while(i < lines.length && isNum(lines[i])){ it.push(lines[i].replace(/^\s*\d+[.)]\s+/, "")); i++; } out += "<ol>" + it.map(x => "<li>" + inline(x) + "</li>").join("") + "</ol>"; continue; }
+    if(l.trim() === ""){ i++; continue; }
+    out += "<p>" + inline(l) + "</p>"; i++;
+  }
+  return out;
+}
 function load(){ try{ chats = JSON.parse(localStorage.getItem(KEY)) || []; }catch{ chats = []; } }
 function save(){ try{ localStorage.setItem(KEY, JSON.stringify(chats.slice(0, 50))); }catch{} }
 const active = () => chats.find(c => c.id === activeId);
@@ -160,13 +205,20 @@ function botHtml(res){
   const ok = !res.abstained, pct = Math.max(0, Math.min(100, Math.round(res.top_similarity*100)));
   const hint = res.reason==="out_of_scope" ? "This is outside my 141 plant-health articles, so I didn’t ask the language model. Try asking how a plant disease spreads or what causes it."
              : res.reason==="model_refused" ? "The retrieved passages did not contain the answer, so the model declined instead of guessing." : "";
-  const sources = (res.sources||[]).map(s => `<a class="source" href="${esc(s.url)}" target="_blank" rel="noopener"><span class="num">${s.n}</span><span class="src-text"><span class="src-title">${esc(s.title)}</span><span class="src-sec">${esc(s.section)}</span></span><span class="src-open">Wikipedia ↗</span></a>`).join("");
+  const seen = new Set();
+  const sources = (res.sources||[]).map(s => { const first = !seen.has(s.title); seen.add(s.title);
+    return `<div class="source"><span class="num">${s.n}</span>${first && s.thumb ? `<img class="thumb" loading="lazy" referrerpolicy="no-referrer" alt="" src="${esc(s.thumb)}" onerror="this.remove()">` : ""}<span class="src-text"><span class="src-title">${esc(s.title)}</span><span class="src-sec">${esc(s.section)}</span></span><button class="ev" data-ev>Show passage</button><a class="src-open" href="${esc(s.url)}" target="_blank" rel="noopener">Wikipedia ↗</a><div class="passage" hidden>${esc(s.text||"")}<small>The exact passage the answer used (revision ${esc(String(s.revid||""))}).</small></div></div>`; }).join("");
+  const understood = res.standalone_question ? `<div class="understood">Understood as: <b>${esc(res.standalone_question)}</b></div>` : "";
+  const fu = (res.follow_ups||[]).length ? `<div class="fu-row"><span>Ask next</span>${res.follow_ups.map(q => `<button class="fu" data-fu="${esc(q)}">${esc(q)}</button>`).join("")}</div>` : "";
+  const kind = res.kind==="table" ? "Comparison" : res.kind==="list" ? `${res.count} points` : "";
   return `<div class="bot">
-    <div class="meta"><span class="pill ${ok?"ok":"warn"}">${ok?"Answered from sources":"Declined to answer"}</span>
+    <div class="meta"><span class="pill ${ok?"ok":"warn"}">${ok?"Answered from sources":"Declined to answer"}</span>${kind && ok ? `<span class="pill ok" style="background:#eef2f1;color:#475569">${kind}</span>` : ""}
       <span class="metric">Match <span class="bar"><i style="width:${pct}%"></i></span><b>${res.top_similarity.toFixed(2)}</b></span>
       <span class="metric">Time <b>${res.seconds} s</b></span><span class="metric">Model <b>${esc(res.model)}</b></span></div>
-    <div class="card ${ok?"":"refusal"}"><p class="answer">${withCites(res.answer)}</p>${hint?`<p class="hint">${hint}</p>`:""}</div>
+    ${understood}
+    <div class="card ${ok?"":"refusal"}"><div class="answer rich">${rich(res.answer)}</div>${hint?`<p class="hint">${hint}</p>`:""}</div>
     ${sources?`<div class="sources">${sources}</div>`:""}
+    ${fu}
     <div class="actions"><button data-copy>Copy answer</button></div></div>`;
 }
 function msgHtml(m, i){
@@ -195,6 +247,7 @@ async function send(text){
   busy = true; $("#send").disabled = true;
   let c = active();
   if(!c){ c = {id: String(Date.now()), title: text.length>42 ? text.slice(0,42)+"…" : text, messages: []}; chats.unshift(c); activeId = c.id; }
+  const history = c.messages.slice(-6).map(m => ({role: m.role === "user" ? "user" : "bot", text: m.role === "user" ? m.text : (m.res && m.res.answer) || ""}));
   c.messages.push({role:"user", text});
   $("#input").value = ""; autosize(); render();
   const t = $("#thread");
@@ -202,7 +255,7 @@ async function send(text){
   scrollDown();
   let res;
   try{
-    const r = await fetch("/api/ask", {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({question:text, model:$("#model").value || undefined})});
+    const r = await fetch("/api/ask", {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({question:text, model:$("#model").value || undefined, style:$("#style").value, history})});
     if(!r.ok){ const e = await r.json().catch(()=>({})); res = {error: e.detail || ("Request failed ("+r.status+")")}; }
     else res = await r.json();
   }catch(e){ res = {error: "Could not reach the server: "+e.message}; }
@@ -220,11 +273,15 @@ $("#send").onclick = () => send();
 $("#newchat").onclick = newChat;
 document.addEventListener("click", e => {
   const ex = e.target.closest("[data-ex]"); if(ex){ send(EXAMPLES[ex.dataset.ex][1]); return; }
+  const fu = e.target.closest("[data-fu]"); if(fu){ send(fu.dataset.fu); return; }
+  const evb = e.target.closest("[data-ev]"); if(evb){ const p = evb.parentElement.querySelector(".passage"); p.hidden = !p.hidden; evb.textContent = p.hidden ? "Show passage" : "Hide passage"; return; }
   const del = e.target.closest("[data-del]"); if(del){ e.stopPropagation(); chats = chats.filter(c => c.id!==del.dataset.del); if(activeId===del.dataset.del) activeId = null; save(); render(); return; }
   const item = e.target.closest(".chat-item"); if(item){ activeId = item.dataset.id; render(); return; }
   const cp = e.target.closest("[data-copy]"); if(cp){ const i = +cp.closest(".msg").dataset.i; navigator.clipboard?.writeText(active().messages[i].res.answer); cp.textContent = "Copied ✓"; setTimeout(()=>cp.textContent="Copy answer", 1500); }
 });
 $("#model").onchange = e => { try{ localStorage.setItem(MKEY, e.target.value); }catch{} };
+$("#style").onchange = e => { try{ localStorage.setItem("plantrag.style", e.target.value); }catch{} };
+try{ const st = localStorage.getItem("plantrag.style"); if(st) $("#style").value = st; }catch{}
 
 // voice input (browser speech recognition; Chrome/Edge/Safari)
 const SR = window.SpeechRecognition || window.webkitSpeechRecognition;

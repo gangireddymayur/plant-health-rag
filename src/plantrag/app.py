@@ -6,6 +6,7 @@ refusals are identical. Chat history is kept in the browser (localStorage), neve
 """
 import re
 import threading
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import requests
@@ -15,6 +16,7 @@ from fastapi.responses import FileResponse
 from pydantic import BaseModel
 
 from .answer import DEFAULT_MODEL, ask
+from .fetch import API, HEADERS
 from .retrieve import Retriever
 
 WEB = Path(__file__).parent / "web"
@@ -59,9 +61,53 @@ def small_talk(question):
     return None
 
 
+_thumbs = {}
+_pool = ThreadPoolExecutor(max_workers=4)
+
+
+def thumbnail(title):
+    """Lead image of a Wikipedia article (a small thumbnail URL), or None. Cached; failures are not fatal."""
+    if title in _thumbs:
+        return _thumbs[title]
+    url = None
+    try:
+        r = requests.get(API, params={"action": "query", "titles": title, "redirects": 1, "prop": "pageimages",
+                                      "piprop": "thumbnail", "pithumbsize": 240, "format": "json"},
+                         headers=HEADERS, timeout=4)
+        page = next(iter(r.json()["query"]["pages"].values()))
+        url = page.get("thumbnail", {}).get("source")
+    except Exception:
+        pass
+    _thumbs[title] = url
+    return url
+
+
+_FOLLOWUPS = [  # (section words, question template): only offered when the article really has such a section
+    (r"symptom|identification|description", "What are the symptoms of {t}?"),
+    (r"transmi|spread|disease cycle|life cycle|biology|epidemiolog", "How does {t} spread?"),
+    (r"manage|control|prevent|treat", "How can {t} be managed or controlled?"),
+    (r"host|distribution|range|occurrence|habitat", "Which plants or regions does {t} affect?"),
+    (r"history|impact|economic", "What is the history and impact of {t}?"),
+]
+
+
+def follow_ups(titles, asked, limit=3):
+    """Suggested next questions, built from the section names of the cited articles (always answerable)."""
+    out = []
+    for title in titles[:2]:
+        sections = [c["section"].lower() for c in retriever().chunks if c["title"] == title]
+        for pattern, template in _FOLLOWUPS:
+            q = template.format(t=title)
+            if q.lower() != asked.lower() and any(re.search(pattern, sec) for sec in sections) and q not in out:
+                out.append(q)
+    return out[:limit]
+
+
 class Question(BaseModel):
     question: str
     model: str = DEFAULT_MODEL
+    style: str = "detailed"
+    history: list[dict] = []
 
 
 @app.get("/")
@@ -93,10 +139,18 @@ def ask_endpoint(body: Question):
     if reply:
         return {"question": question, "answer": reply, "reason": "small_talk", "abstained": False,
                 "top_similarity": 0.0, "seconds": 0.0, "model": body.model, "sources": [], "cited": []}
+    style = body.style if body.style in ("concise", "detailed") else "detailed"
+    history = [{"role": str(m.get("role", ""))[:8], "text": str(m.get("text", ""))[:600]} for m in body.history[-6:]]
     try:
-        return ask(question, retriever(), body.model)
+        res = ask(question, retriever(), body.model, style=style, history=history or None)
     except requests.RequestException as e:
         raise HTTPException(503, f"Could not reach Ollama or the model '{body.model}': {e}")
+    res.pop("passages", None)  # the full passages are only needed by the evaluation scripts
+    titles = list(dict.fromkeys(s["title"] for s in res["sources"]))
+    for src, thumb in zip(res["sources"], _pool.map(thumbnail, [s["title"] for s in res["sources"]])):
+        src["thumb"] = thumb
+    res["follow_ups"] = follow_ups(titles, res.get("standalone_question") or question) if not res["abstained"] else []
+    return res
 
 
 def main():
