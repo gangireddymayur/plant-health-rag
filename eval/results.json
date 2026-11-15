@@ -1,0 +1,408 @@
+{
+  "questions": 153,
+  "retrieval": {
+    "bm25": {
+      "dev": {
+        "hit1": 0.548,
+        "hit3": 0.786,
+        "hit5": 0.833,
+        "mrr": 0.667,
+        "article5": 1.0,
+        "n": 42
+      },
+      "test": {
+        "hit1": 0.573,
+        "hit3": 0.854,
+        "hit5": 0.902,
+        "mrr": 0.727,
+        "article5": 0.988,
+        "n": 82
+      },
+      "all": {
+        "hit1": 0.565,
+        "hit3": 0.831,
+        "hit5": 0.879,
+        "mrr": 0.707,
+        "article5": 0.992,
+        "n": 124
+      },
+      "missed_at_5": [
+        "Where does the apple scab fungus spend the winter?",
+        "What do cedar apple rust symptoms look like on apple leaves?",
+        "What weather conditions favour the spread of late blight?",
+        "How can tomato yellow leaf curl virus be managed?",
+        "How does grape black rot survive between seasons?",
+        "How is black rot of apple controlled?",
+        "What does powdery mildew look like on leaves?",
+        "What is crop rotation?",
+        "What are the main principles of integrated pest management?",
+        "How do physical barriers help plants resist disease?",
+        "How is rice tungro disease spread?",
+        "What kind of organism causes Verticillium wilt?",
+        "How do Trichoderma fungi help protect crops?",
+        "Which country produces the most pigeon peas?",
+        "Which plant tissue does Fusarium wilt colonise?"
+      ]
+    },
+    "dense": {
+      "dev": {
+        "hit1": 0.762,
+        "hit3": 0.881,
+        "hit5": 0.881,
+        "mrr": 0.825,
+        "article5": 0.976,
+        "n": 42
+      },
+      "test": {
+        "hit1": 0.756,
+        "hit3": 0.927,
+        "hit5": 0.963,
+        "mrr": 0.841,
+        "article5": 0.963,
+        "n": 82
+      },
+      "all": {
+        "hit1": 0.758,
+        "hit3": 0.911,
+        "hit5": 0.935,
+        "mrr": 0.836,
+        "article5": 0.968,
+        "n": 124
+      },
+      "missed_at_5": [
+        "Which historical event was caused by potato late blight?",
+        "What are the symptoms of common rust on corn?",
+        "How is black rot of apple controlled?",
+        "What are the main principles of integrated pest management?",
+        "How do physical barriers help plants resist disease?",
+        "How is rice tungro disease spread?",
+        "Which crop does Asian soybean rust affect?",
+        "Which crop do western corn rootworm larvae feed on?"
+      ]
+    },
+    "hybrid": {
+      "dev": {
+        "hit1": 0.667,
+        "hit3": 0.857,
+        "hit5": 0.857,
+        "mrr": 0.764,
+        "article5": 0.976,
+        "n": 42
+      },
+      "test": {
+        "hit1": 0.72,
+        "hit3": 0.89,
+        "hit5": 0.976,
+        "mrr": 0.82,
+        "article5": 0.988,
+        "n": 82
+      },
+      "all": {
+        "hit1": 0.702,
+        "hit3": 0.879,
+        "hit5": 0.935,
+        "mrr": 0.801,
+        "article5": 0.984,
+        "n": 124
+      },
+      "missed_at_5": [
+        "Where does the apple scab fungus spend the winter?",
+        "Which historical event was caused by potato late blight?",
+        "How is black rot of apple controlled?",
+        "What are the main principles of integrated pest management?",
+        "How do physical barriers help plants resist disease?",
+        "How is rice tungro disease spread?",
+        "Which crop do western corn rootworm larvae feed on?",
+        "Which plant tissue does Fusarium wilt colonise?"
+      ]
+    }
+  },
+  "similarity_scan": [
+    {
+      "threshold": 0.45,
+      "dev": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.0
+      },
+      "test": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.0
+      },
+      "all": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.0
+      }
+    },
+    {
+      "threshold": 0.5,
+      "dev": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.0
+      },
+      "test": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.0
+      },
+      "all": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.0
+      }
+    },
+    {
+      "threshold": 0.55,
+      "dev": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.111
+      },
+      "test": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.25
+      },
+      "all": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.207
+      }
+    },
+    {
+      "threshold": 0.6,
+      "dev": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.222
+      },
+      "test": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.3
+      },
+      "all": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.276
+      }
+    },
+    {
+      "threshold": 0.65,
+      "dev": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.333
+      },
+      "test": {
+        "answerable_blocked": 0.012,
+        "unanswerable_blocked": 0.55
+      },
+      "all": {
+        "answerable_blocked": 0.008,
+        "unanswerable_blocked": 0.483
+      }
+    },
+    {
+      "threshold": 0.7,
+      "dev": {
+        "answerable_blocked": 0.0,
+        "unanswerable_blocked": 0.667
+      },
+      "test": {
+        "answerable_blocked": 0.012,
+        "unanswerable_blocked": 0.85
+      },
+      "all": {
+        "answerable_blocked": 0.008,
+        "unanswerable_blocked": 0.793
+      }
+    }
+  ],
+  "top_similarity_by_question": {
+    "q01": 0.885,
+    "q02": 0.774,
+    "q03": 0.752,
+    "q04": 0.776,
+    "q05": 0.812,
+    "q06": 0.778,
+    "q07": 0.87,
+    "q08": 0.806,
+    "q09": 0.77,
+    "q10": 0.819,
+    "q11": 0.819,
+    "q12": 0.879,
+    "q13": 0.866,
+    "q14": 0.835,
+    "q15": 0.806,
+    "q16": 0.825,
+    "q17": 0.85,
+    "q18": 0.811,
+    "q19": 0.83,
+    "q20": 0.897,
+    "q21": 0.829,
+    "q22": 0.895,
+    "q23": 0.799,
+    "q24": 0.858,
+    "q25": 0.859,
+    "q26": 0.813,
+    "q27": 0.738,
+    "q28": 0.767,
+    "q29": 0.761,
+    "q30": 0.823,
+    "q31": 0.765,
+    "q32": 0.784,
+    "q33": 0.795,
+    "q34": 0.784,
+    "q35": 0.828,
+    "q36": 0.809,
+    "q37": 0.91,
+    "q38": 0.91,
+    "q39": 0.856,
+    "q40": 0.856,
+    "q41": 0.843,
+    "q42": 0.821,
+    "q43": 0.825,
+    "q44": 0.868,
+    "q45": 0.863,
+    "q46": 0.893,
+    "q47": 0.754,
+    "q48": 0.845,
+    "q49": 0.885,
+    "q50": 0.828,
+    "q51": 0.729,
+    "q52": 0.695,
+    "q53": 0.641,
+    "q54": 0.62,
+    "q55": 0.737,
+    "q56": 0.668,
+    "q57": 0.651,
+    "q58": 0.757,
+    "q59": 0.526,
+    "q60": 0.549,
+    "q61": 0.525,
+    "q62": 0.668,
+    "q63": 0.548,
+    "q64": 0.62,
+    "q65": 0.615,
+    "q66": 0.861,
+    "q67": 0.851,
+    "q68": 0.82,
+    "q69": 0.879,
+    "q70": 0.818,
+    "q71": 0.846,
+    "q72": 0.635,
+    "q73": 0.852,
+    "q74": 0.868,
+    "q75": 0.759,
+    "q76": 0.794,
+    "q77": 0.869,
+    "q78": 0.794,
+    "q79": 0.841,
+    "q80": 0.814,
+    "q81": 0.826,
+    "q82": 0.822,
+    "q83": 0.847,
+    "q84": 0.896,
+    "q85": 0.906,
+    "q86": 0.863,
+    "q87": 0.887,
+    "q88": 0.83,
+    "q89": 0.873,
+    "q90": 0.818,
+    "q91": 0.845,
+    "q92": 0.803,
+    "q93": 0.742,
+    "q94": 0.805,
+    "q95": 0.827,
+    "q96": 0.747,
+    "q97": 0.822,
+    "q98": 0.809,
+    "q99": 0.836,
+    "q100": 0.747,
+    "q101": 0.838,
+    "q102": 0.903,
+    "q103": 0.786,
+    "q104": 0.806,
+    "q105": 0.814,
+    "q106": 0.821,
+    "q107": 0.868,
+    "q108": 0.847,
+    "q109": 0.877,
+    "q110": 0.861,
+    "q111": 0.778,
+    "q112": 0.859,
+    "q113": 0.864,
+    "q114": 0.783,
+    "q115": 0.906,
+    "q116": 0.846,
+    "q117": 0.815,
+    "q118": 0.768,
+    "q119": 0.857,
+    "q120": 0.774,
+    "q121": 0.883,
+    "q122": 0.797,
+    "q123": 0.806,
+    "q124": 0.758,
+    "q125": 0.773,
+    "q126": 0.826,
+    "q127": 0.775,
+    "q128": 0.796,
+    "q129": 0.849,
+    "q130": 0.788,
+    "q131": 0.807,
+    "q132": 0.776,
+    "q133": 0.708,
+    "q134": 0.781,
+    "q135": 0.8,
+    "q136": 0.801,
+    "q137": 0.848,
+    "q138": 0.884,
+    "q139": 0.834,
+    "q140": 0.564,
+    "q141": 0.718,
+    "q142": 0.707,
+    "q143": 0.7,
+    "q144": 0.676,
+    "q145": 0.689,
+    "q146": 0.704,
+    "q147": 0.646,
+    "q148": 0.684,
+    "q149": 0.694,
+    "q150": 0.644,
+    "q151": 0.551,
+    "q152": 0.517,
+    "q153": 0.519
+  },
+  "answers": {
+    "model": "qwen3:8b",
+    "judge_model": "qwen3:14b",
+    "k": 5,
+    "mode": "dense",
+    "min_similarity": 0.65,
+    "minutes": 24.0,
+    "dev": {
+      "answerable": 42,
+      "unanswerable": 9,
+      "correct_rate": 0.881,
+      "false_refusal_rate": 0.024,
+      "cites_gold_rate": 0.878,
+      "has_citation_rate": 1.0,
+      "faithful_rate": 0.976,
+      "correct_refusal_rate": 1.0,
+      "hallucination_rate_on_unanswerable": 0.0
+    },
+    "test": {
+      "answerable": 82,
+      "unanswerable": 20,
+      "correct_rate": 0.939,
+      "false_refusal_rate": 0.037,
+      "cites_gold_rate": 0.962,
+      "has_citation_rate": 1.0,
+      "faithful_rate": 0.937,
+      "correct_refusal_rate": 0.95,
+      "hallucination_rate_on_unanswerable": 0.05
+    },
+    "all": {
+      "answerable": 124,
+      "unanswerable": 29,
+      "correct_rate": 0.919,
+      "false_refusal_rate": 0.032,
+      "cites_gold_rate": 0.933,
+      "has_citation_rate": 1.0,
+      "faithful_rate": 0.95,
+      "correct_refusal_rate": 0.966,
+      "hallucination_rate_on_unanswerable": 0.034
+    }
+  }
+}

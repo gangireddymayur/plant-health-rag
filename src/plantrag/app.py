@@ -34,7 +34,7 @@ def retriever():
 
 
 INTRO = ("I'm Plant Health RAG. I answer questions about plant diseases, pests and crop protection "
-         "using 36 Wikipedia articles, and I cite my sources. Try asking how a disease spreads or what causes it.")
+         "using 141 Wikipedia articles, and I cite my sources. Try asking how a disease spreads or what causes it.")
 _SMALLTALK = [
     (r"(hi+|hello+|hey+|hiya|yo|hola|namaste|good (morning|afternoon|evening)|greetings)( (there|bot|everyone))?",
      "Hi! " + INTRO),

@@ -358,5 +358,1055 @@
     "url": "https://en.wikipedia.org/wiki/Oomycete",
     "license": "CC BY-SA 4.0",
     "words": 1232
+  },
+  {
+    "title": "Magnaporthe grisea",
+    "requested_title": "Rice blast",
+    "pageid": 1870627,
+    "revid": 1380415479,
+    "timestamp": "2026-10-15T16:07:00Z",
+    "url": "https://en.wikipedia.org/wiki/Magnaporthe_grisea",
+    "license": "CC BY-SA 4.0",
+    "words": 1998
+  },
+  {
+    "title": "Xanthomonas oryzae",
+    "requested_title": "Xanthomonas oryzae",
+    "pageid": 11292273,
+    "revid": 1367506798,
+    "timestamp": "2026-08-03T13:59:12Z",
+    "url": "https://en.wikipedia.org/wiki/Xanthomonas_oryzae",
+    "license": "CC BY-SA 4.0",
+    "words": 112
+  },
+  {
+    "title": "Rhizoctonia solani",
+    "requested_title": "Rhizoctonia solani",
+    "pageid": 10104316,
+    "revid": 1380702488,
+    "timestamp": "2026-10-17T09:46:07Z",
+    "url": "https://en.wikipedia.org/wiki/Rhizoctonia_solani",
+    "license": "CC BY-SA 4.0",
+    "words": 1748
+  },
+  {
+    "title": "Cochliobolus miyabeanus",
+    "requested_title": "Bipolaris oryzae",
+    "pageid": 9211582,
+    "revid": 1368624308,
+    "timestamp": "2026-08-10T03:56:30Z",
+    "url": "https://en.wikipedia.org/wiki/Cochliobolus_miyabeanus",
+    "license": "CC BY-SA 4.0",
+    "words": 1148
+  },
+  {
+    "title": "Tungrovirus",
+    "requested_title": "Rice tungro bacilliform virus",
+    "pageid": 47070609,
+    "revid": 1332128494,
+    "timestamp": "2026-01-10T01:42:21Z",
+    "url": "https://en.wikipedia.org/wiki/Tungrovirus",
+    "license": "CC BY-SA 4.0",
+    "words": 465
+  },
+  {
+    "title": "Brown planthopper",
+    "requested_title": "Brown planthopper",
+    "pageid": 4182397,
+    "revid": 1381378612,
+    "timestamp": "2026-10-22T01:21:48Z",
+    "url": "https://en.wikipedia.org/wiki/Brown_planthopper",
+    "license": "CC BY-SA 4.0",
+    "words": 871
+  },
+  {
+    "title": "Scirpophaga incertulas",
+    "requested_title": "Scirpophaga incertulas",
+    "pageid": 34286435,
+    "revid": 1368889609,
+    "timestamp": "2026-08-11T17:26:15Z",
+    "url": "https://en.wikipedia.org/wiki/Scirpophaga_incertulas",
+    "license": "CC BY-SA 4.0",
+    "words": 476
+  },
+  {
+    "title": "Stem rust",
+    "requested_title": "Puccinia graminis",
+    "pageid": 4941350,
+    "revid": 1368825560,
+    "timestamp": "2026-08-11T09:01:15Z",
+    "url": "https://en.wikipedia.org/wiki/Stem_rust",
+    "license": "CC BY-SA 4.0",
+    "words": 4221
+  },
+  {
+    "title": "Puccinia striiformis var. striiformis",
+    "requested_title": "Puccinia striiformis",
+    "pageid": 11128376,
+    "revid": 1374093296,
+    "timestamp": "2026-09-09T20:14:42Z",
+    "url": "https://en.wikipedia.org/wiki/Puccinia_striiformis_var._striiformis",
+    "license": "CC BY-SA 4.0",
+    "words": 164
+  },
+  {
+    "title": "Wheat leaf rust",
+    "requested_title": "Puccinia triticina",
+    "pageid": 4941377,
+    "revid": 1379004712,
+    "timestamp": "2026-10-07T09:22:14Z",
+    "url": "https://en.wikipedia.org/wiki/Wheat_leaf_rust",
+    "license": "CC BY-SA 4.0",
+    "words": 1845
+  },
+  {
+    "title": "Karnal bunt",
+    "requested_title": "Tilletia indica",
+    "pageid": 2146495,
+    "revid": 1297843700,
+    "timestamp": "2025-06-28T21:38:01Z",
+    "url": "https://en.wikipedia.org/wiki/Karnal_bunt",
+    "license": "CC BY-SA 4.0",
+    "words": 1310
+  },
+  {
+    "title": "Fusarium ear blight",
+    "requested_title": "Fusarium head blight",
+    "pageid": 146447,
+    "revid": 1382835758,
+    "timestamp": "2026-10-30T15:29:35Z",
+    "url": "https://en.wikipedia.org/wiki/Fusarium_ear_blight",
+    "license": "CC BY-SA 4.0",
+    "words": 1158
+  },
+  {
+    "title": "Loose smut",
+    "requested_title": "Loose smut",
+    "pageid": 9601217,
+    "revid": 1331359853,
+    "timestamp": "2026-01-05T23:52:20Z",
+    "url": "https://en.wikipedia.org/wiki/Loose_smut",
+    "license": "CC BY-SA 4.0",
+    "words": 1275
+  },
+  {
+    "title": "Ergot",
+    "requested_title": "Ergot",
+    "pageid": 262925,
+    "revid": 1385323613,
+    "timestamp": "2026-11-12T20:08:41Z",
+    "url": "https://en.wikipedia.org/wiki/Ergot",
+    "license": "CC BY-SA 4.0",
+    "words": 4955
+  },
+  {
+    "title": "Wheat",
+    "requested_title": "Wheat",
+    "pageid": 36858,
+    "revid": 1383635584,
+    "timestamp": "2026-11-03T21:10:51Z",
+    "url": "https://en.wikipedia.org/wiki/Wheat",
+    "license": "CC BY-SA 4.0",
+    "words": 6644
+  },
+  {
+    "title": "Pink bollworm",
+    "requested_title": "Pink bollworm",
+    "pageid": 4199537,
+    "revid": 1376461694,
+    "timestamp": "2026-09-24T07:21:07Z",
+    "url": "https://en.wikipedia.org/wiki/Pink_bollworm",
+    "license": "CC BY-SA 4.0",
+    "words": 390
+  },
+  {
+    "title": "Helicoverpa armigera",
+    "requested_title": "Helicoverpa armigera",
+    "pageid": 7702498,
+    "revid": 1353586585,
+    "timestamp": "2026-05-11T04:01:12Z",
+    "url": "https://en.wikipedia.org/wiki/Helicoverpa_armigera",
+    "license": "CC BY-SA 4.0",
+    "words": 1266
+  },
+  {
+    "title": "Cotton leaf curl virus",
+    "requested_title": "Cotton leaf curl virus",
+    "pageid": 12353334,
+    "revid": 1371307179,
+    "timestamp": "2026-08-25T20:23:20Z",
+    "url": "https://en.wikipedia.org/wiki/Cotton_leaf_curl_virus",
+    "license": "CC BY-SA 4.0",
+    "words": 750
+  },
+  {
+    "title": "Verticillium wilt",
+    "requested_title": "Verticillium wilt",
+    "pageid": 8220315,
+    "revid": 1384297911,
+    "timestamp": "2026-11-07T16:13:36Z",
+    "url": "https://en.wikipedia.org/wiki/Verticillium_wilt",
+    "license": "CC BY-SA 4.0",
+    "words": 2866
+  },
+  {
+    "title": "Fusarium wilt",
+    "requested_title": "Fusarium wilt",
+    "pageid": 770092,
+    "revid": 1380681413,
+    "timestamp": "2026-10-17T06:21:54Z",
+    "url": "https://en.wikipedia.org/wiki/Fusarium_wilt",
+    "license": "CC BY-SA 4.0",
+    "words": 1871
+  },
+  {
+    "title": "Boll weevil",
+    "requested_title": "Boll weevil",
+    "pageid": 170822,
+    "revid": 1381767857,
+    "timestamp": "2026-10-24T17:53:20Z",
+    "url": "https://en.wikipedia.org/wiki/Boll_weevil",
+    "license": "CC BY-SA 4.0",
+    "words": 1819
+  },
+  {
+    "title": "Cotton",
+    "requested_title": "Cotton",
+    "pageid": 36806,
+    "revid": 1385072813,
+    "timestamp": "2026-11-11T19:02:02Z",
+    "url": "https://en.wikipedia.org/wiki/Cotton",
+    "license": "CC BY-SA 4.0",
+    "words": 9033
+  },
+  {
+    "title": "Canker",
+    "requested_title": "Anthracnose",
+    "pageid": 1290402,
+    "revid": 1371359182,
+    "timestamp": "2026-08-26T02:24:40Z",
+    "url": "https://en.wikipedia.org/wiki/Canker",
+    "license": "CC BY-SA 4.0",
+    "words": 389
+  },
+  {
+    "title": "Colletotrichum",
+    "requested_title": "Colletotrichum",
+    "pageid": 12857598,
+    "revid": 1369637384,
+    "timestamp": "2026-08-16T05:18:53Z",
+    "url": "https://en.wikipedia.org/wiki/Colletotrichum",
+    "license": "CC BY-SA 4.0",
+    "words": 1085
+  },
+  {
+    "title": "Peanut",
+    "requested_title": "Peanut",
+    "pageid": 55602,
+    "revid": 1385789763,
+    "timestamp": "2026-11-15T05:52:32Z",
+    "url": "https://en.wikipedia.org/wiki/Peanut",
+    "license": "CC BY-SA 4.0",
+    "words": 3767
+  },
+  {
+    "title": "Cercospora arachidicola",
+    "requested_title": "Cercospora arachidicola",
+    "pageid": 11436419,
+    "revid": 1321692942,
+    "timestamp": "2025-11-12T02:29:57Z",
+    "url": "https://en.wikipedia.org/wiki/Cercospora_arachidicola",
+    "license": "CC BY-SA 4.0",
+    "words": 551
+  },
+  {
+    "title": "Aspergillus flavus",
+    "requested_title": "Aspergillus flavus",
+    "pageid": 698043,
+    "revid": 1384682458,
+    "timestamp": "2026-11-09T15:22:41Z",
+    "url": "https://en.wikipedia.org/wiki/Aspergillus_flavus",
+    "license": "CC BY-SA 4.0",
+    "words": 2446
+  },
+  {
+    "title": "Aflatoxin",
+    "requested_title": "Aflatoxin",
+    "pageid": 177303,
+    "revid": 1383397025,
+    "timestamp": "2026-11-02T13:41:06Z",
+    "url": "https://en.wikipedia.org/wiki/Aflatoxin",
+    "license": "CC BY-SA 4.0",
+    "words": 2142
+  },
+  {
+    "title": "Glomerella tucumanensis",
+    "requested_title": "Colletotrichum falcatum",
+    "pageid": 11569759,
+    "revid": 1332005732,
+    "timestamp": "2026-01-09T10:54:41Z",
+    "url": "https://en.wikipedia.org/wiki/Glomerella_tucumanensis",
+    "license": "CC BY-SA 4.0",
+    "words": 136
+  },
+  {
+    "title": "Sugarcane smut",
+    "requested_title": "Sporisorium scitamineum",
+    "pageid": 5580524,
+    "revid": 1385227603,
+    "timestamp": "2026-11-12T11:53:15Z",
+    "url": "https://en.wikipedia.org/wiki/Sugarcane_smut",
+    "license": "CC BY-SA 4.0",
+    "words": 1217
+  },
+  {
+    "title": "Sugarcane",
+    "requested_title": "Sugarcane",
+    "pageid": 13873779,
+    "revid": 1383743230,
+    "timestamp": "2026-11-04T15:30:44Z",
+    "url": "https://en.wikipedia.org/wiki/Sugarcane",
+    "license": "CC BY-SA 4.0",
+    "words": 6096
+  },
+  {
+    "title": "Rice",
+    "requested_title": "Rice",
+    "pageid": 36979,
+    "revid": 1384744435,
+    "timestamp": "2026-11-09T22:37:35Z",
+    "url": "https://en.wikipedia.org/wiki/Rice",
+    "license": "CC BY-SA 4.0",
+    "words": 4766
+  },
+  {
+    "title": "Maize",
+    "requested_title": "Maize",
+    "pageid": 20656228,
+    "revid": 1383485160,
+    "timestamp": "2026-11-02T23:06:51Z",
+    "url": "https://en.wikipedia.org/wiki/Maize",
+    "license": "CC BY-SA 4.0",
+    "words": 5020
+  },
+  {
+    "title": "Panama disease",
+    "requested_title": "Panama disease",
+    "pageid": 770096,
+    "revid": 1370517625,
+    "timestamp": "2026-08-21T15:59:01Z",
+    "url": "https://en.wikipedia.org/wiki/Panama_disease",
+    "license": "CC BY-SA 4.0",
+    "words": 4156
+  },
+  {
+    "title": "Black sigatoka",
+    "requested_title": "Mycosphaerella fijiensis",
+    "pageid": 769420,
+    "revid": 1380656332,
+    "timestamp": "2026-10-17T02:34:36Z",
+    "url": "https://en.wikipedia.org/wiki/Black_sigatoka",
+    "license": "CC BY-SA 4.0",
+    "words": 1613
+  },
+  {
+    "title": "Banana bunchy top virus",
+    "requested_title": "Banana bunchy top virus",
+    "pageid": 12264210,
+    "revid": 1382601663,
+    "timestamp": "2026-10-29T12:23:15Z",
+    "url": "https://en.wikipedia.org/wiki/Banana_bunchy_top_virus",
+    "license": "CC BY-SA 4.0",
+    "words": 1665
+  },
+  {
+    "title": "Banana streak virus",
+    "requested_title": "Banana streak virus",
+    "pageid": 12264317,
+    "revid": 1370366704,
+    "timestamp": "2026-08-20T18:40:08Z",
+    "url": "https://en.wikipedia.org/wiki/Banana_streak_virus",
+    "license": "CC BY-SA 4.0",
+    "words": 166
+  },
+  {
+    "title": "Oryctes rhinoceros",
+    "requested_title": "Oryctes rhinoceros",
+    "pageid": 32359501,
+    "revid": 1374099208,
+    "timestamp": "2026-09-09T21:02:24Z",
+    "url": "https://en.wikipedia.org/wiki/Oryctes_rhinoceros",
+    "license": "CC BY-SA 4.0",
+    "words": 2321
+  },
+  {
+    "title": "Rhynchophorus ferrugineus",
+    "requested_title": "Red palm weevil",
+    "pageid": 10329773,
+    "revid": 1381308098,
+    "timestamp": "2026-10-21T14:08:17Z",
+    "url": "https://en.wikipedia.org/wiki/Rhynchophorus_ferrugineus",
+    "license": "CC BY-SA 4.0",
+    "words": 2541
+  },
+  {
+    "title": "Lethal yellowing",
+    "requested_title": "Lethal yellowing",
+    "pageid": 3487947,
+    "revid": 1190735718,
+    "timestamp": "2023-12-19T14:58:48Z",
+    "url": "https://en.wikipedia.org/wiki/Lethal_yellowing",
+    "license": "CC BY-SA 4.0",
+    "words": 467
+  },
+  {
+    "title": "Hemileia vastatrix",
+    "requested_title": "Hemileia vastatrix",
+    "pageid": 4104862,
+    "revid": 1380051819,
+    "timestamp": "2026-10-13T13:53:55Z",
+    "url": "https://en.wikipedia.org/wiki/Hemileia_vastatrix",
+    "license": "CC BY-SA 4.0",
+    "words": 2995
+  },
+  {
+    "title": "Exobasidium vexans",
+    "requested_title": "Exobasidium vexans",
+    "pageid": 11512410,
+    "revid": 1353761644,
+    "timestamp": "2026-05-12T05:20:20Z",
+    "url": "https://en.wikipedia.org/wiki/Exobasidium_vexans",
+    "license": "CC BY-SA 4.0",
+    "words": 643
+  },
+  {
+    "title": "Hypothenemus hampei",
+    "requested_title": "Coffee berry borer",
+    "pageid": 13050299,
+    "revid": 1369640020,
+    "timestamp": "2026-08-16T05:44:58Z",
+    "url": "https://en.wikipedia.org/wiki/Hypothenemus_hampei",
+    "license": "CC BY-SA 4.0",
+    "words": 1336
+  },
+  {
+    "title": "Potato virus Y",
+    "requested_title": "Potato virus Y",
+    "pageid": 12386405,
+    "revid": 1374778133,
+    "timestamp": "2026-09-14T01:38:57Z",
+    "url": "https://en.wikipedia.org/wiki/Potato_virus_Y",
+    "license": "CC BY-SA 4.0",
+    "words": 4082
+  },
+  {
+    "title": "Colorado potato beetle",
+    "requested_title": "Colorado potato beetle",
+    "pageid": 379210,
+    "revid": 1374816757,
+    "timestamp": "2026-09-14T06:33:33Z",
+    "url": "https://en.wikipedia.org/wiki/Colorado_potato_beetle",
+    "license": "CC BY-SA 4.0",
+    "words": 5099
+  },
+  {
+    "title": "Ralstonia solanacearum",
+    "requested_title": "Ralstonia solanacearum",
+    "pageid": 10438113,
+    "revid": 1320295517,
+    "timestamp": "2025-11-03T21:31:13Z",
+    "url": "https://en.wikipedia.org/wiki/Ralstonia_solanacearum",
+    "license": "CC BY-SA 4.0",
+    "words": 2604
+  },
+  {
+    "title": "Bacterial wilt",
+    "requested_title": "Bacterial wilt",
+    "pageid": 13630766,
+    "revid": 1380653923,
+    "timestamp": "2026-10-17T02:16:25Z",
+    "url": "https://en.wikipedia.org/wiki/Bacterial_wilt",
+    "license": "CC BY-SA 4.0",
+    "words": 557
+  },
+  {
+    "title": "Fusarium oxysporum",
+    "requested_title": "Fusarium oxysporum",
+    "pageid": 312937,
+    "revid": 1368841377,
+    "timestamp": "2026-08-11T11:05:55Z",
+    "url": "https://en.wikipedia.org/wiki/Fusarium_oxysporum",
+    "license": "CC BY-SA 4.0",
+    "words": 980
+  },
+  {
+    "title": "Calcium deficiency (plant)",
+    "requested_title": "Blossom end rot",
+    "pageid": 157877,
+    "revid": 1345715282,
+    "timestamp": "2026-03-27T18:30:25Z",
+    "url": "https://en.wikipedia.org/wiki/Calcium_deficiency_(plant)",
+    "license": "CC BY-SA 4.0",
+    "words": 727
+  },
+  {
+    "title": "Tomato spotted wilt virus",
+    "requested_title": "Tomato spotted wilt virus",
+    "pageid": 59318346,
+    "revid": 1385064693,
+    "timestamp": "2026-11-11T18:08:07Z",
+    "url": "https://en.wikipedia.org/wiki/Tomato_spotted_wilt_virus",
+    "license": "CC BY-SA 4.0",
+    "words": 823
+  },
+  {
+    "title": "Phakopsora pachyrhizi",
+    "requested_title": "Phakopsora pachyrhizi",
+    "pageid": 11798034,
+    "revid": 1322934317,
+    "timestamp": "2025-11-18T18:04:05Z",
+    "url": "https://en.wikipedia.org/wiki/Phakopsora_pachyrhizi",
+    "license": "CC BY-SA 4.0",
+    "words": 818
+  },
+  {
+    "title": "Soybean cyst nematode",
+    "requested_title": "Heterodera glycines",
+    "pageid": 2581120,
+    "revid": 1345367801,
+    "timestamp": "2026-03-25T19:06:26Z",
+    "url": "https://en.wikipedia.org/wiki/Soybean_cyst_nematode",
+    "license": "CC BY-SA 4.0",
+    "words": 1293
+  },
+  {
+    "title": "Soybean aphid",
+    "requested_title": "Soybean aphid",
+    "pageid": 21427163,
+    "revid": 1384700296,
+    "timestamp": "2026-11-09T17:44:45Z",
+    "url": "https://en.wikipedia.org/wiki/Soybean_aphid",
+    "license": "CC BY-SA 4.0",
+    "words": 3084
+  },
+  {
+    "title": "Corn smut",
+    "requested_title": "Ustilago maydis",
+    "pageid": 303084,
+    "revid": 1383232556,
+    "timestamp": "2026-11-01T17:46:05Z",
+    "url": "https://en.wikipedia.org/wiki/Corn_smut",
+    "license": "CC BY-SA 4.0",
+    "words": 2155
+  },
+  {
+    "title": "Diabrotica virgifera",
+    "requested_title": "Diabrotica virgifera",
+    "pageid": 4434171,
+    "revid": 1369574127,
+    "timestamp": "2026-08-15T20:35:49Z",
+    "url": "https://en.wikipedia.org/wiki/Diabrotica_virgifera",
+    "license": "CC BY-SA 4.0",
+    "words": 40
+  },
+  {
+    "title": "European corn borer",
+    "requested_title": "Ostrinia nubilalis",
+    "pageid": 8976548,
+    "revid": 1380035333,
+    "timestamp": "2026-10-13T11:27:54Z",
+    "url": "https://en.wikipedia.org/wiki/European_corn_borer",
+    "license": "CC BY-SA 4.0",
+    "words": 2179
+  },
+  {
+    "title": "Southern corn leaf blight",
+    "requested_title": "Southern corn leaf blight",
+    "pageid": 37404930,
+    "revid": 1369123520,
+    "timestamp": "2026-08-13T01:53:52Z",
+    "url": "https://en.wikipedia.org/wiki/Southern_corn_leaf_blight",
+    "license": "CC BY-SA 4.0",
+    "words": 1491
+  },
+  {
+    "title": "Helicoverpa zea",
+    "requested_title": "Helicoverpa zea",
+    "pageid": 352289,
+    "revid": 1375790215,
+    "timestamp": "2026-09-20T02:23:16Z",
+    "url": "https://en.wikipedia.org/wiki/Helicoverpa_zea",
+    "license": "CC BY-SA 4.0",
+    "words": 2713
+  },
+  {
+    "title": "Fall armyworm",
+    "requested_title": "Spodoptera frugiperda",
+    "pageid": 21561194,
+    "revid": 1373923018,
+    "timestamp": "2026-09-08T19:29:09Z",
+    "url": "https://en.wikipedia.org/wiki/Fall_armyworm",
+    "license": "CC BY-SA 4.0",
+    "words": 3349
+  },
+  {
+    "title": "Desert locust",
+    "requested_title": "Desert locust",
+    "pageid": 1063671,
+    "revid": 1384861020,
+    "timestamp": "2026-11-10T12:53:30Z",
+    "url": "https://en.wikipedia.org/wiki/Desert_locust",
+    "license": "CC BY-SA 4.0",
+    "words": 5438
+  },
+  {
+    "title": "Aphid",
+    "requested_title": "Aphid",
+    "pageid": 162296,
+    "revid": 1383655883,
+    "timestamp": "2026-11-04T00:11:01Z",
+    "url": "https://en.wikipedia.org/wiki/Aphid",
+    "license": "CC BY-SA 4.0",
+    "words": 6401
+  },
+  {
+    "title": "Thrips",
+    "requested_title": "Thrips",
+    "pageid": 371272,
+    "revid": 1384670481,
+    "timestamp": "2026-11-09T13:31:53Z",
+    "url": "https://en.wikipedia.org/wiki/Thrips",
+    "license": "CC BY-SA 4.0",
+    "words": 3299
+  },
+  {
+    "title": "Leafhopper",
+    "requested_title": "Leafhopper",
+    "pageid": 2535591,
+    "revid": 1383752610,
+    "timestamp": "2026-11-04T16:59:14Z",
+    "url": "https://en.wikipedia.org/wiki/Leafhopper",
+    "license": "CC BY-SA 4.0",
+    "words": 998
+  },
+  {
+    "title": "Mealybug",
+    "requested_title": "Mealybug",
+    "pageid": 495341,
+    "revid": 1371229263,
+    "timestamp": "2026-08-25T08:51:10Z",
+    "url": "https://en.wikipedia.org/wiki/Mealybug",
+    "license": "CC BY-SA 4.0",
+    "words": 817
+  },
+  {
+    "title": "Root-knot nematode",
+    "requested_title": "Meloidogyne",
+    "pageid": 1870970,
+    "revid": 1378324786,
+    "timestamp": "2026-10-04T00:14:18Z",
+    "url": "https://en.wikipedia.org/wiki/Root-knot_nematode",
+    "license": "CC BY-SA 4.0",
+    "words": 1348
+  },
+  {
+    "title": "Cutworm",
+    "requested_title": "Cutworm",
+    "pageid": 2539181,
+    "revid": 1377891833,
+    "timestamp": "2026-10-01T19:59:18Z",
+    "url": "https://en.wikipedia.org/wiki/Cutworm",
+    "license": "CC BY-SA 4.0",
+    "words": 803
+  },
+  {
+    "title": "Diamondback moth",
+    "requested_title": "Plutella xylostella",
+    "pageid": 8407474,
+    "revid": 1381740659,
+    "timestamp": "2026-10-24T13:48:12Z",
+    "url": "https://en.wikipedia.org/wiki/Diamondback_moth",
+    "license": "CC BY-SA 4.0",
+    "words": 3146
+  },
+  {
+    "title": "Tuta absoluta",
+    "requested_title": "Tuta absoluta",
+    "pageid": 23862740,
+    "revid": 1378585033,
+    "timestamp": "2026-10-05T02:52:12Z",
+    "url": "https://en.wikipedia.org/wiki/Tuta_absoluta",
+    "license": "CC BY-SA 4.0",
+    "words": 2126
+  },
+  {
+    "title": "Spotted lanternfly",
+    "requested_title": "Spotted lanternfly",
+    "pageid": 44827287,
+    "revid": 1382809556,
+    "timestamp": "2026-10-30T12:09:35Z",
+    "url": "https://en.wikipedia.org/wiki/Spotted_lanternfly",
+    "license": "CC BY-SA 4.0",
+    "words": 4190
+  },
+  {
+    "title": "Emerald ash borer",
+    "requested_title": "Emerald ash borer",
+    "pageid": 1162925,
+    "revid": 1383284293,
+    "timestamp": "2026-11-01T22:43:40Z",
+    "url": "https://en.wikipedia.org/wiki/Emerald_ash_borer",
+    "license": "CC BY-SA 4.0",
+    "words": 3220
+  },
+  {
+    "title": "Japanese beetle",
+    "requested_title": "Japanese beetle",
+    "pageid": 162567,
+    "revid": 1380005210,
+    "timestamp": "2026-10-13T05:46:12Z",
+    "url": "https://en.wikipedia.org/wiki/Japanese_beetle",
+    "license": "CC BY-SA 4.0",
+    "words": 1503
+  },
+  {
+    "title": "Brown marmorated stink bug",
+    "requested_title": "Halyomorpha halys",
+    "pageid": 9186134,
+    "revid": 1381378808,
+    "timestamp": "2026-10-22T01:24:14Z",
+    "url": "https://en.wikipedia.org/wiki/Brown_marmorated_stink_bug",
+    "license": "CC BY-SA 4.0",
+    "words": 3485
+  },
+  {
+    "title": "Armyworm",
+    "requested_title": "Armyworm",
+    "pageid": 19850237,
+    "revid": 1239667610,
+    "timestamp": "2024-08-10T19:13:00Z",
+    "url": "https://en.wikipedia.org/wiki/Armyworm",
+    "license": "CC BY-SA 4.0",
+    "words": 57
+  },
+  {
+    "title": "Damping off",
+    "requested_title": "Damping off",
+    "pageid": 10353866,
+    "revid": 1380661513,
+    "timestamp": "2026-10-17T03:25:56Z",
+    "url": "https://en.wikipedia.org/wiki/Damping_off",
+    "license": "CC BY-SA 4.0",
+    "words": 620
+  },
+  {
+    "title": "Root rot",
+    "requested_title": "Root rot",
+    "pageid": 5818788,
+    "revid": 1378909878,
+    "timestamp": "2026-10-06T21:37:36Z",
+    "url": "https://en.wikipedia.org/wiki/Root_rot",
+    "license": "CC BY-SA 4.0",
+    "words": 418
+  },
+  {
+    "title": "Fusarium",
+    "requested_title": "Fusarium",
+    "pageid": 935302,
+    "revid": 1384684004,
+    "timestamp": "2026-11-09T15:34:36Z",
+    "url": "https://en.wikipedia.org/wiki/Fusarium",
+    "license": "CC BY-SA 4.0",
+    "words": 1358
+  },
+  {
+    "title": "Wilt disease",
+    "requested_title": "Wilt disease",
+    "pageid": 24998054,
+    "revid": 1373419971,
+    "timestamp": "2026-09-05T21:53:28Z",
+    "url": "https://en.wikipedia.org/wiki/Wilt_disease",
+    "license": "CC BY-SA 4.0",
+    "words": 858
+  },
+  {
+    "title": "Downy mildew",
+    "requested_title": "Downy mildew",
+    "pageid": 1195973,
+    "revid": 1345358208,
+    "timestamp": "2026-03-25T18:20:27Z",
+    "url": "https://en.wikipedia.org/wiki/Downy_mildew",
+    "license": "CC BY-SA 4.0",
+    "words": 1024
+  },
+  {
+    "title": "Sooty mold",
+    "requested_title": "Sooty mold",
+    "pageid": 2122751,
+    "revid": 1341454460,
+    "timestamp": "2026-03-03T08:04:36Z",
+    "url": "https://en.wikipedia.org/wiki/Sooty_mold",
+    "license": "CC BY-SA 4.0",
+    "words": 677
+  },
+  {
+    "title": "Agrobacterium tumefaciens",
+    "requested_title": "Agrobacterium tumefaciens",
+    "pageid": 646817,
+    "revid": 1376835628,
+    "timestamp": "2026-09-26T14:46:00Z",
+    "url": "https://en.wikipedia.org/wiki/Agrobacterium_tumefaciens",
+    "license": "CC BY-SA 4.0",
+    "words": 2996
+  },
+  {
+    "title": "Fire blight",
+    "requested_title": "Erwinia amylovora",
+    "pageid": 244847,
+    "revid": 1381626201,
+    "timestamp": "2026-10-23T19:22:00Z",
+    "url": "https://en.wikipedia.org/wiki/Fire_blight",
+    "license": "CC BY-SA 4.0",
+    "words": 2410
+  },
+  {
+    "title": "Citrus canker",
+    "requested_title": "Citrus canker",
+    "pageid": 2133579,
+    "revid": 1366015851,
+    "timestamp": "2026-07-25T19:57:10Z",
+    "url": "https://en.wikipedia.org/wiki/Citrus_canker",
+    "license": "CC BY-SA 4.0",
+    "words": 2147
+  },
+  {
+    "title": "Phytophthora ramorum",
+    "requested_title": "Phytophthora ramorum",
+    "pageid": 589513,
+    "revid": 1369778557,
+    "timestamp": "2026-08-17T02:56:44Z",
+    "url": "https://en.wikipedia.org/wiki/Phytophthora_ramorum",
+    "license": "CC BY-SA 4.0",
+    "words": 6937
+  },
+  {
+    "title": "Chestnut blight",
+    "requested_title": "Chestnut blight",
+    "pageid": 67741,
+    "revid": 1382397290,
+    "timestamp": "2026-10-28T14:09:09Z",
+    "url": "https://en.wikipedia.org/wiki/Chestnut_blight",
+    "license": "CC BY-SA 4.0",
+    "words": 3176
+  },
+  {
+    "title": "Taphrina deformans",
+    "requested_title": "Taphrina deformans",
+    "pageid": 11128650,
+    "revid": 1312733050,
+    "timestamp": "2025-09-22T09:01:07Z",
+    "url": "https://en.wikipedia.org/wiki/Taphrina_deformans",
+    "license": "CC BY-SA 4.0",
+    "words": 830
+  },
+  {
+    "title": "Monilinia fructicola",
+    "requested_title": "Monilinia fructicola",
+    "pageid": 9500722,
+    "revid": 1233575255,
+    "timestamp": "2024-07-09T20:20:19Z",
+    "url": "https://en.wikipedia.org/wiki/Monilinia_fructicola",
+    "license": "CC BY-SA 4.0",
+    "words": 793
+  },
+  {
+    "title": "Biological pest control",
+    "requested_title": "Biological pest control",
+    "pageid": 155739,
+    "revid": 1378698309,
+    "timestamp": "2026-10-05T19:03:42Z",
+    "url": "https://en.wikipedia.org/wiki/Biological_pest_control",
+    "license": "CC BY-SA 4.0",
+    "words": 5811
+  },
+  {
+    "title": "Pesticide",
+    "requested_title": "Pesticide",
+    "pageid": 48340,
+    "revid": 1382190886,
+    "timestamp": "2026-10-27T05:06:51Z",
+    "url": "https://en.wikipedia.org/wiki/Pesticide",
+    "license": "CC BY-SA 4.0",
+    "words": 5932
+  },
+  {
+    "title": "Neem oil",
+    "requested_title": "Neem oil",
+    "pageid": 1010708,
+    "revid": 1358350620,
+    "timestamp": "2026-06-08T03:57:11Z",
+    "url": "https://en.wikipedia.org/wiki/Neem_oil",
+    "license": "CC BY-SA 4.0",
+    "words": 336
+  },
+  {
+    "title": "Bacillus thuringiensis",
+    "requested_title": "Bacillus thuringiensis",
+    "pageid": 4184,
+    "revid": 1381684738,
+    "timestamp": "2026-10-24T03:27:38Z",
+    "url": "https://en.wikipedia.org/wiki/Bacillus_thuringiensis",
+    "license": "CC BY-SA 4.0",
+    "words": 4005
+  },
+  {
+    "title": "Trichoderma",
+    "requested_title": "Trichoderma",
+    "pageid": 10456574,
+    "revid": 1364124342,
+    "timestamp": "2026-07-14T17:17:26Z",
+    "url": "https://en.wikipedia.org/wiki/Trichoderma",
+    "license": "CC BY-SA 4.0",
+    "words": 1539
+  },
+  {
+    "title": "Pesticide resistance",
+    "requested_title": "Pesticide resistance",
+    "pageid": 216151,
+    "revid": 1385296207,
+    "timestamp": "2026-11-12T17:44:46Z",
+    "url": "https://en.wikipedia.org/wiki/Pesticide_resistance",
+    "license": "CC BY-SA 4.0",
+    "words": 2653
+  },
+  {
+    "title": "Organic farming",
+    "requested_title": "Organic farming",
+    "pageid": 72754,
+    "revid": 1382261229,
+    "timestamp": "2026-10-27T17:00:02Z",
+    "url": "https://en.wikipedia.org/wiki/Organic_farming",
+    "license": "CC BY-SA 4.0",
+    "words": 12028
+  },
+  {
+    "title": "Soil solarization",
+    "requested_title": "Soil solarization",
+    "pageid": 12516292,
+    "revid": 1366159211,
+    "timestamp": "2026-07-26T17:01:23Z",
+    "url": "https://en.wikipedia.org/wiki/Soil_solarization",
+    "license": "CC BY-SA 4.0",
+    "words": 1102
+  },
+  {
+    "title": "Intercropping",
+    "requested_title": "Intercropping",
+    "pageid": 408703,
+    "revid": 1360692020,
+    "timestamp": "2026-06-23T01:06:42Z",
+    "url": "https://en.wikipedia.org/wiki/Intercropping",
+    "license": "CC BY-SA 4.0",
+    "words": 1269
+  },
+  {
+    "title": "Agriculture in India",
+    "requested_title": "Agriculture in India",
+    "pageid": 6808893,
+    "revid": 1385001807,
+    "timestamp": "2026-11-11T09:25:14Z",
+    "url": "https://en.wikipedia.org/wiki/Agriculture_in_India",
+    "license": "CC BY-SA 4.0",
+    "words": 8117
+  },
+  {
+    "title": "Green Revolution in India",
+    "requested_title": "Green Revolution in India",
+    "pageid": 14101118,
+    "revid": 1381722612,
+    "timestamp": "2026-10-24T10:29:09Z",
+    "url": "https://en.wikipedia.org/wiki/Green_Revolution_in_India",
+    "license": "CC BY-SA 4.0",
+    "words": 1557
+  },
+  {
+    "title": "Indian Council of Agricultural Research",
+    "requested_title": "Indian Council of Agricultural Research",
+    "pageid": 2899838,
+    "revid": 1377621886,
+    "timestamp": "2026-09-30T05:55:32Z",
+    "url": "https://en.wikipedia.org/wiki/Indian_Council_of_Agricultural_Research",
+    "license": "CC BY-SA 4.0",
+    "words": 868
+  },
+  {
+    "title": "Kharif crop",
+    "requested_title": "Kharif crop",
+    "pageid": 8075353,
+    "revid": 1373324852,
+    "timestamp": "2026-09-05T09:02:12Z",
+    "url": "https://en.wikipedia.org/wiki/Kharif_crop",
+    "license": "CC BY-SA 4.0",
+    "words": 453
+  },
+  {
+    "title": "Rabi crop",
+    "requested_title": "Rabi crop",
+    "pageid": 11687693,
+    "revid": 1362469759,
+    "timestamp": "2026-07-04T03:52:45Z",
+    "url": "https://en.wikipedia.org/wiki/Rabi_crop",
+    "license": "CC BY-SA 4.0",
+    "words": 492
+  },
+  {
+    "title": "Agriculture in the United States",
+    "requested_title": "Agriculture in the United States",
+    "pageid": 242778,
+    "revid": 1385652654,
+    "timestamp": "2026-11-14T14:24:06Z",
+    "url": "https://en.wikipedia.org/wiki/Agriculture_in_the_United_States",
+    "license": "CC BY-SA 4.0",
+    "words": 3410
+  },
+  {
+    "title": "Mango",
+    "requested_title": "Mango",
+    "pageid": 56315,
+    "revid": 1383739864,
+    "timestamp": "2026-11-04T15:00:09Z",
+    "url": "https://en.wikipedia.org/wiki/Mango",
+    "license": "CC BY-SA 4.0",
+    "words": 2538
+  },
+  {
+    "title": "Chili pepper",
+    "requested_title": "Chili pepper",
+    "pageid": 74225,
+    "revid": 1382947295,
+    "timestamp": "2026-10-31T03:49:07Z",
+    "url": "https://en.wikipedia.org/wiki/Chili_pepper",
+    "license": "CC BY-SA 4.0",
+    "words": 2566
+  },
+  {
+    "title": "Pigeon pea",
+    "requested_title": "Pigeon pea",
+    "pageid": 47863693,
+    "revid": 1383661353,
+    "timestamp": "2026-11-04T00:55:19Z",
+    "url": "https://en.wikipedia.org/wiki/Pigeon_pea",
+    "license": "CC BY-SA 4.0",
+    "words": 3371
+  },
+  {
+    "title": "Chickpea",
+    "requested_title": "Chickpea",
+    "pageid": 57146,
+    "revid": 1383890522,
+    "timestamp": "2026-11-05T11:05:24Z",
+    "url": "https://en.wikipedia.org/wiki/Chickpea",
+    "license": "CC BY-SA 4.0",
+    "words": 2731
   }
 ]

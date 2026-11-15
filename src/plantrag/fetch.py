@@ -15,7 +15,7 @@ import requests
 API = "https://en.wikipedia.org/w/api.php"
 HEADERS = {"User-Agent": "plant-doctor-rag/0.1 (portfolio learning project)"}
 
-# Diseases and pests that the LeafLens app can name, plus general background articles.
+# Diseases and pests that the LeafLens app can name, general background, and Indian / US crop problems.
 TITLES = [
     "Apple scab", "Botryosphaeria obtusa", "Gymnosporangium juniperi-virginianae", "Powdery mildew",
     "Corn grey leaf spot", "Puccinia sorghi", "Northern corn leaf blight", "Black rot (grape disease)",
@@ -26,6 +26,29 @@ TITLES = [
     "Plant pathology", "Plant disease", "Plant disease resistance", "Plant disease epidemiology",
     "Fungicide", "Crop rotation", "Integrated pest management", "Plant virus", "Whitefly", "Mulch",
     "Leaf spot", "Blight", "Rust (fungus)", "Oomycete",
+    # Added for Indian and US crops, pests and diseases:
+    "Rice blast", "Xanthomonas oryzae", "Rhizoctonia solani", "Bipolaris oryzae",
+    "Rice tungro bacilliform virus", "Brown planthopper", "Scirpophaga incertulas", "Puccinia graminis",
+    "Puccinia striiformis", "Puccinia triticina", "Tilletia indica", "Fusarium head blight", "Loose smut",
+    "Ergot", "Wheat", "Pink bollworm", "Helicoverpa armigera", "Cotton leaf curl virus", "Verticillium wilt",
+    "Fusarium wilt", "Boll weevil", "Cotton", "Anthracnose", "Colletotrichum", "Peanut",
+    "Cercospora arachidicola", "Aspergillus flavus", "Aflatoxin", "Colletotrichum falcatum",
+    "Sporisorium scitamineum", "Sugarcane", "Rice", "Maize", "Panama disease", "Mycosphaerella fijiensis",
+    "Banana bunchy top virus", "Banana streak virus", "Oryctes rhinoceros", "Red palm weevil",
+    "Lethal yellowing", "Hemileia vastatrix", "Exobasidium vexans", "Coffee berry borer", "Potato virus Y",
+    "Colorado potato beetle", "Ralstonia solanacearum", "Bacterial wilt", "Fusarium oxysporum",
+    "Blossom end rot", "Tomato spotted wilt virus", "Phakopsora pachyrhizi", "Heterodera glycines",
+    "Soybean aphid", "Ustilago maydis", "Diabrotica virgifera", "Ostrinia nubilalis",
+    "Southern corn leaf blight", "Helicoverpa zea", "Spodoptera frugiperda", "Desert locust", "Aphid",
+    "Thrips", "Leafhopper", "Mealybug", "Meloidogyne", "Cutworm", "Plutella xylostella", "Tuta absoluta",
+    "Spotted lanternfly", "Emerald ash borer", "Japanese beetle", "Halyomorpha halys", "Armyworm",
+    "Damping off", "Root rot", "Fusarium", "Wilt disease", "Downy mildew", "Sooty mold",
+    "Agrobacterium tumefaciens", "Erwinia amylovora", "Citrus canker", "Phytophthora ramorum",
+    "Chestnut blight", "Taphrina deformans", "Monilinia fructicola", "Biological pest control", "Pesticide",
+    "Neem oil", "Bacillus thuringiensis", "Trichoderma", "Pesticide resistance", "Organic farming",
+    "Soil solarization", "Intercropping", "Agriculture in India", "Green Revolution in India",
+    "Indian Council of Agricultural Research", "Kharif crop", "Rabi crop", "Agriculture in the United States",
+    "Mango", "Chili pepper", "Pigeon pea", "Chickpea",
 ]
 
 

@@ -75,6 +75,101 @@ UNANSWERABLE = [
     ("off_topic", "Who is the current Prime Minister of India?"),
 ]
 
+
+# ---- Added when the corpus grew from 36 to 141 articles (Indian and US crops, pests and diseases) ----
+NEW_ANSWERABLE = [
+    ("Magnaporthe grisea", "Which fungus causes rice blast?", [r"Magnaporthe"], [["magnaporthe", "pyricularia"]]),
+    ("Xanthomonas oryzae", "Which rice disease does Xanthomonas oryzae cause?", [r"blight"], [["blight"]]),
+    ("Rhizoctonia solani", "Which rice disease does Rhizoctonia solani cause?", [r"sheath blight"], [["sheath blight"]]),
+    ("Cochliobolus miyabeanus", "What is the rice disease caused by Cochliobolus miyabeanus called?", [r"brown spot"], [["brown spot"]]),
+    ("Tungrovirus", "How is rice tungro disease spread?", [r"leafhopper"], [["leafhopper"]]),
+    ("Stem rust", "Which fungus causes wheat stem rust?", [r"Puccinia graminis"], [["puccinia graminis"]]),
+    ("Stem rust", "What is Ug99?", [r"Ug99"], [["ug99", "race", "strain", "lineage"]]),
+    ("Wheat leaf rust", "Which fungus causes wheat leaf rust?", [r"Puccinia triticina"], [["puccinia triticina"]]),
+    ("Karnal bunt", "Which fungus causes Karnal bunt of wheat?", [r"Tilletia indica|Neovossia"], [["tilletia", "neovossia"]]),
+    ("Karnal bunt", "Where was Karnal bunt first found?", [r"Karnal", r"India|Haryana"], [["karnal", "india", "haryana"]]),
+    ("Fusarium ear blight", "Which toxin can contaminate wheat grain affected by Fusarium head blight?", [r"deoxynivalenol|mycotoxin"], [["deoxynivalenol", "mycotoxin", "don"]]),
+    ("Ergot", "Which fungus causes ergot?", [r"Claviceps"], [["claviceps"]]),
+    ("Ergot", "What illness can eating ergot-contaminated grain cause in people?", [r"ergotism"], [["ergotism"]]),
+    ("Pink bollworm", "Which crop does the pink bollworm attack?", [r"cotton"], [["cotton"]]),
+    ("Cotton leaf curl virus", "How is cotton leaf curl virus spread?", [r"whitefl"], [["whitefl"]]),
+    ("Verticillium wilt", "What kind of organism causes Verticillium wilt?", [r"fung"], [["fung", "verticillium"]]),
+    ("Aspergillus flavus", "Which toxin does Aspergillus flavus produce?", [r"aflatoxin"], [["aflatoxin"]]),
+    ("Aflatoxin", "Which crops are commonly contaminated by aflatoxins?", [r"maize|corn|peanut|groundnut"], [["maize", "corn", "peanut", "groundnut"]]),
+    ("Cercospora arachidicola", "Which disease of peanuts does Cercospora arachidicola cause?", [r"leaf spot"], [["leaf spot"]]),
+    ("Glomerella tucumanensis", "Which sugarcane disease does Glomerella tucumanensis cause?", [r"red rot"], [["red rot"]]),
+    ("Sugarcane smut", "What structure grows from sugarcane plants infected with smut?", [r"whip"], [["whip"]]),
+    ("Panama disease", "Which fungus causes Panama disease of banana?", [r"Fusarium oxysporum"], [["fusarium oxysporum", "fusarium"]]),
+    ("Panama disease", "Which banana variety was devastated by Panama disease in the 20th century?", [r"Gros Michel"], [["gros michel"]]),
+    ("Black sigatoka", "Which fungus causes black sigatoka of banana?", [r"Mycosphaerella fijiensis|Pseudocercospora fijiensis"], [["fijiensis"]]),
+    ("Potato virus Y", "How is potato virus Y spread?", [r"aphid"], [["aphid"]]),
+    ("Ralstonia solanacearum", "Which disease does Ralstonia solanacearum cause?", [r"bacterial wilt|brown rot"], [["bacterial wilt", "brown rot", "wilt"]]),
+    ("Tomato spotted wilt virus", "Which insects transmit tomato spotted wilt virus?", [r"thrips"], [["thrips"]]),
+    ("Phakopsora pachyrhizi", "Which crop does Asian soybean rust affect?", [r"soybean"], [["soybean"]]),
+    ("Soybean cyst nematode", "What kind of organism is the soybean cyst nematode?", [r"nematode|roundworm"], [["nematode", "roundworm", "worm"]]),
+    ("Corn smut", "What is corn smut called when it is eaten as a delicacy in Mexico?", [r"huitlacoche"], [["huitlacoche"]]),
+    ("Diabrotica virgifera", "Which crop do western corn rootworm larvae feed on?", [r"corn|maize"], [["corn", "maize"]]),
+    ("Fall armyworm", "Which crop does the fall armyworm mainly damage?", [r"maize|corn"], [["maize", "corn"]]),
+    ("Fall armyworm", "Which continent is the fall armyworm native to?", [r"America"], [["america"]]),
+    ("Desert locust", "In which regions are desert locusts found?", [r"Africa|Asia"], [["africa", "asia"]]),
+    ("Aphid", "What sugary substance do aphids excrete?", [r"honeydew"], [["honeydew"]]),
+    ("Thrips", "What kind of damage do thrips do to plants?", [r"feed|silver|scar"], [["feed", "silver", "scar", "sap"]]),
+    ("Root-knot nematode", "What do root-knot nematodes cause on plant roots?", [r"gall"], [["gall", "knot"]]),
+    ("Cutworm", "Which part of young plants do cutworms cut through?", [r"stem|seedling"], [["stem", "seedling", "base"]]),
+    ("Diamondback moth", "Which group of crops does the diamondback moth attack?", [r"cabbage|Brassica|cruciferous"], [["cabbage", "brassica", "cruciferous"]]),
+    ("Tuta absoluta", "Which crop does Tuta absoluta mainly attack?", [r"tomato"], [["tomato"]]),
+    ("Spotted lanternfly", "Where is the spotted lanternfly originally from?", [r"China|Asia"], [["china", "asia"]]),
+    ("Brown marmorated stink bug", "Where is the brown marmorated stink bug native to?", [r"Asia|China|Japan"], [["asia", "china", "japan"]]),
+    ("Damping off", "What is damping off?", [r"seedling"], [["seedling"]]),
+    ("Sooty mold", "What does sooty mold grow on?", [r"honeydew"], [["honeydew"]]),
+    ("Agrobacterium tumefaciens", "Which plant disease does Agrobacterium tumefaciens cause?", [r"crown gall"], [["crown gall"]]),
+    ("Fire blight", "Which bacterium causes fire blight?", [r"Erwinia amylovora"], [["erwinia amylovora"]]),
+    ("Citrus canker", "Which bacterium causes citrus canker?", [r"Xanthomonas"], [["xanthomonas"]]),
+    ("Phytophthora ramorum", "Which disease does Phytophthora ramorum cause?", [r"sudden oak death"], [["sudden oak death"]]),
+    ("Chestnut blight", "Which tree did chestnut blight devastate in North America?", [r"American chestnut"], [["american chestnut", "chestnut"]]),
+    ("Taphrina deformans", "Which disease does Taphrina deformans cause on peach trees?", [r"leaf curl"], [["leaf curl"]]),
+    ("Monilinia fructicola", "Which fruits does Monilinia fructicola rot?", [r"peach|stone fruit|plum|cherry"], [["peach", "stone fruit", "plum", "cherry"]]),
+    ("Neem oil", "Which tree is neem oil obtained from?", [r"neem tree|Azadirachta"], [["neem", "azadirachta"]]),
+    ("Trichoderma", "How do Trichoderma fungi help protect crops?", [r"biocontrol|biological control|pathogen"], [["biocontrol", "biological control", "pathogen", "antagon"]]),
+    ("Pesticide resistance", "How does pesticide resistance develop in pests?", [r"selection|survive|evol"], [["selection", "survive", "evol", "resistan"]]),
+    ("Organic farming", "What does organic farming avoid using?", [r"synthetic|pesticide|fertili"], [["synthetic", "pesticide", "fertili", "chemical"]]),
+    ("Intercropping", "What is intercropping?", [r"two or more|multiple|more than one"], [["two or more", "multiple", "more than one", "different crops"]]),
+    ("Green Revolution in India", "Which scientist is known as the father of the Green Revolution in India?", [r"Swaminathan"], [["swaminathan"]]),
+    ("Rabi crop", "Which crop is a major rabi crop in India?", [r"wheat"], [["wheat"]]),
+    ("Chili pepper", "Which compound makes chili peppers hot?", [r"capsaicin"], [["capsaicin"]]),
+    ("Chickpea", "Which country is the largest producer of chickpeas?", [r"India"], [["india"]]),
+    ("Pigeon pea", "Which country produces the most pigeon peas?", [r"India"], [["india"]]),
+    ("Puccinia striiformis var. striiformis", "What is stripe rust of wheat also called?", [r"yellow rust|stripe rust"], [["yellow rust", "yellow"]]),
+    ("Loose smut", "Which part of the seed does the loose smut fungus live in?", [r"embryo"], [["embryo"]]),
+    ("Helicoverpa armigera", "In which regions is Helicoverpa armigera found?", [r"Old World|Africa|Australia"], [["old world", "africa", "australia", "asia", "europe"]]),
+    ("Fusarium wilt", "Which plant tissue does Fusarium wilt colonise?", [r"xylem"], [["xylem", "vascular"]]),
+    ("Rhynchophorus ferrugineus", "Where did the red palm weevil originate?", [r"South(ern)? Asia|Asia|Melanesia"], [["asia", "melanesia"]]),
+    ("Hemileia vastatrix", "What happened to coffee growing in Ceylon because of coffee rust?", [r"Ceylon|Sri Lanka"], [["ceylon", "sri lanka", "tea", "destroy", "wiped", "collapse"]]),
+    ("Hypothenemus hampei", "Where is the coffee berry borer originally from?", [r"Africa"], [["africa"]]),
+    ("Calcium deficiency (plant)", "Which tomato fruit disorder is caused by calcium deficiency?", [r"blossom.end rot"], [["blossom end rot", "blossom-end rot"]]),
+    ("Japanese beetle", "Where was the Japanese beetle first found in the United States?", [r"New Jersey"], [["new jersey"]]),
+    ("Biological pest control", "What is classical biological control?", [r"classical"], [["classical", "introduc", "natural enem", "release"]]),
+    ("Soil solarization", "How does soil solarization heat the soil?", [r"plastic|clear"], [["plastic", "clear", "tarp", "sheet"]]),
+    ("Kharif crop", "When are kharif crops harvested?", [r"September|October"], [["september", "october"]]),
+    ("Aphid", "How do aphids reproduce so quickly?", [r"parthenogen"], [["parthenogen", "without mating", "asexual", "females"]]),
+]
+NEW_UNANSWERABLE = [
+    ("unanswerable_topic", "What is the minimum support price of paddy this year?"),
+    ("unanswerable_topic", "How many hectares of cotton were planted in Maharashtra in 2023?"),
+    ("unanswerable_topic", "What dose of tricyclazole should I use against rice blast per acre?"),
+    ("unanswerable_topic", "How much does a litre of neem oil cost in India?"),
+    ("unanswerable_topic", "Which wheat variety is best for Punjab?"),
+    ("unanswerable_topic", "What was the wheat harvest in Uttar Pradesh last year?"),
+    ("unanswerable_topic", "When should I sow cotton in Gujarat?"),
+    ("unanswerable_topic", "How do I apply for the PM-KISAN scheme?"),
+    ("unanswerable_topic", "How much fertiliser should I apply per acre of paddy in Andhra Pradesh?"),
+    ("unanswerable_topic", "Which brand of imidacloprid is best against whitefly on chilli?"),
+    ("unanswerable_topic", "Which insurance covers corn crop loss in Iowa?"),
+    ("off_topic", "Who won the 2011 cricket World Cup?"),
+    ("off_topic", "What time does the first metro train leave Hyderabad?"),
+    ("off_topic", "How do I convert a Python list into a set?"),
+]
+
 # Questions whose evidence regex alone matches most of an article also name the section it should be in.
 SECTION = {
     "Which two kinds of plants does cedar apple rust need to complete its life cycle?": r"Introduction|Disease cycle",
@@ -97,6 +192,11 @@ for title, q, must, kw in ANSWERABLE:
         entry["gold_section"] = SECTION[q]
     qs.append(entry)
 for kind, q in UNANSWERABLE:
+    qs.append({"type": kind, "question": q})
+# The first 65 questions keep their ids and splits from the 36-article version; new ones are appended.
+for title, q, must, kw in NEW_ANSWERABLE:
+    qs.append({"type": A, "gold_title": title, "question": q, "must_contain": must, "answer_keywords": kw})
+for kind, q in NEW_UNANSWERABLE:
     qs.append({"type": kind, "question": q})
 # Every third question is the development set (used for any tuning); the rest are the untouched test set.
 for i, q in enumerate(qs):

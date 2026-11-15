@@ -110,7 +110,7 @@ kbd{background:#eef2f1;border-radius:5px;padding:1px 6px;font-family:inherit;fon
   <button class="newchat" id="newchat"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>New chat</button>
   <div class="hist-label">History</div>
   <div id="history"></div>
-  <div class="side-foot"><b>36</b> Wikipedia articles · <b>92%</b> retrieval hit@5<br><b>94%</b> answers correct · <b>0/15</b> unanswerable answered<br><span style="opacity:.8">65-question test set, written by the author.</span></div>
+  <div class="side-foot"><b>141</b> Wikipedia articles · <b>94%</b> retrieval hit@5<br><b>92%</b> answers correct · <b>1/29</b> unanswerable answered<br><span style="opacity:.8">153-question test set, written by the author.</span></div>
 </aside>
 
 <main>
@@ -133,8 +133,8 @@ kbd{background:#eef2f1;border-radius:5px;padding:1px 6px;font-family:inherit;fon
 const $ = s => document.querySelector(s);
 const EXAMPLES = [
   ["Cited answer", "Which insect carries citrus greening disease, and how does it spread it?"],
-  ["Cited answer", "How is tomato yellow leaf curl virus transmitted?"],
-  ["Cited answer", "What causes late blight of potato?"],
+  ["Cited answer · India", "Which fungus causes rice blast, and how does it spread?"],
+  ["Cited answer · India", "How does Karnal bunt affect wheat?"],
   ["Should decline", "What exact fungicide dose should I spray on tomato early blight in Telangana?"],
 ];
 const KEY = "plantrag.chats", MKEY = "plantrag.model";
@@ -158,7 +158,7 @@ function botHtml(res){
   if(res.error) return `<div class="bot"><div class="meta"><span class="pill err">Error</span></div><div class="card error"><p class="answer">${esc(res.error)}</p><p class="hint">Check that Ollama is running and the selected model is installed.</p></div></div>`;
   if(res.reason==="small_talk") return `<div class="bot"><div class="card"><p class="answer">${esc(res.answer)}</p></div></div>`;
   const ok = !res.abstained, pct = Math.max(0, Math.min(100, Math.round(res.top_similarity*100)));
-  const hint = res.reason==="out_of_scope" ? "This is outside my 36 plant-health articles, so I didn’t ask the language model. Try asking how a plant disease spreads or what causes it."
+  const hint = res.reason==="out_of_scope" ? "This is outside my 141 plant-health articles, so I didn’t ask the language model. Try asking how a plant disease spreads or what causes it."
              : res.reason==="model_refused" ? "The retrieved passages did not contain the answer, so the model declined instead of guessing." : "";
   const sources = (res.sources||[]).map(s => `<a class="source" href="${esc(s.url)}" target="_blank" rel="noopener"><span class="num">${s.n}</span><span class="src-text"><span class="src-title">${esc(s.title)}</span><span class="src-sec">${esc(s.section)}</span></span><span class="src-open">Wikipedia ↗</span></a>`).join("");
   return `<div class="bot">
@@ -181,8 +181,8 @@ function render(){
   if(!c){
     t.innerHTML = `<div class="welcome"><span class="badge"><i></i>Retrieval-augmented generation · answers from sources only</span>
       <h2>Ask about plant diseases.<br><span>Cited answers, or an honest “I don’t know”.</span></h2>
-      <p>Answers come only from 36 Wikipedia articles on plant diseases, pests and crop protection. Every claim links to its source, and the system declines when the articles don’t contain the answer.</p>
-      <div class="stats"><div><b>92%</b><span>right passage in top 5</span></div><div><b>94%</b><span>answers judged correct</span></div><div><b>0 / 15</b><span>unanswerable answered</span></div></div>
+      <p>Answers come only from 141 Wikipedia articles on plant diseases, pests and crop protection, including major crops of India and the US. Every claim links to its source, and the system declines when the articles don’t contain the answer.</p>
+      <div class="stats"><div><b>94%</b><span>right passage in top 5</span></div><div><b>92%</b><span>answers judged correct</span></div><div><b>1 / 29</b><span>unanswerable answered</span></div></div>
       <div class="examples">${EXAMPLES.map((e,i)=>`<button class="ex" data-ex="${i}"><small>${e[0]}</small>${esc(e[1])}</button>`).join("")}</div></div>`;
   } else t.innerHTML = c.messages.map(msgHtml).join("");
   scrollDown();

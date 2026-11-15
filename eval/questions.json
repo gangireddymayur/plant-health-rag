@@ -962,5 +962,1272 @@
   "question": "Who is the current Prime Minister of India?",
   "id": "q65",
   "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Magnaporthe grisea",
+  "question": "Which fungus causes rice blast?",
+  "must_contain": [
+   "Magnaporthe"
+  ],
+  "answer_keywords": [
+   [
+    "magnaporthe",
+    "pyricularia"
+   ]
+  ],
+  "id": "q66",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Xanthomonas oryzae",
+  "question": "Which rice disease does Xanthomonas oryzae cause?",
+  "must_contain": [
+   "blight"
+  ],
+  "answer_keywords": [
+   [
+    "blight"
+   ]
+  ],
+  "id": "q67",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Rhizoctonia solani",
+  "question": "Which rice disease does Rhizoctonia solani cause?",
+  "must_contain": [
+   "sheath blight"
+  ],
+  "answer_keywords": [
+   [
+    "sheath blight"
+   ]
+  ],
+  "id": "q68",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Cochliobolus miyabeanus",
+  "question": "What is the rice disease caused by Cochliobolus miyabeanus called?",
+  "must_contain": [
+   "brown spot"
+  ],
+  "answer_keywords": [
+   [
+    "brown spot"
+   ]
+  ],
+  "id": "q69",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Tungrovirus",
+  "question": "How is rice tungro disease spread?",
+  "must_contain": [
+   "leafhopper"
+  ],
+  "answer_keywords": [
+   [
+    "leafhopper"
+   ]
+  ],
+  "id": "q70",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Stem rust",
+  "question": "Which fungus causes wheat stem rust?",
+  "must_contain": [
+   "Puccinia graminis"
+  ],
+  "answer_keywords": [
+   [
+    "puccinia graminis"
+   ]
+  ],
+  "id": "q71",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Stem rust",
+  "question": "What is Ug99?",
+  "must_contain": [
+   "Ug99"
+  ],
+  "answer_keywords": [
+   [
+    "ug99",
+    "race",
+    "strain",
+    "lineage"
+   ]
+  ],
+  "id": "q72",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Wheat leaf rust",
+  "question": "Which fungus causes wheat leaf rust?",
+  "must_contain": [
+   "Puccinia triticina"
+  ],
+  "answer_keywords": [
+   [
+    "puccinia triticina"
+   ]
+  ],
+  "id": "q73",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Karnal bunt",
+  "question": "Which fungus causes Karnal bunt of wheat?",
+  "must_contain": [
+   "Tilletia indica|Neovossia"
+  ],
+  "answer_keywords": [
+   [
+    "tilletia",
+    "neovossia"
+   ]
+  ],
+  "id": "q74",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Karnal bunt",
+  "question": "Where was Karnal bunt first found?",
+  "must_contain": [
+   "Karnal",
+   "India|Haryana"
+  ],
+  "answer_keywords": [
+   [
+    "karnal",
+    "india",
+    "haryana"
+   ]
+  ],
+  "id": "q75",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Fusarium ear blight",
+  "question": "Which toxin can contaminate wheat grain affected by Fusarium head blight?",
+  "must_contain": [
+   "deoxynivalenol|mycotoxin"
+  ],
+  "answer_keywords": [
+   [
+    "deoxynivalenol",
+    "mycotoxin",
+    "don"
+   ]
+  ],
+  "id": "q76",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Ergot",
+  "question": "Which fungus causes ergot?",
+  "must_contain": [
+   "Claviceps"
+  ],
+  "answer_keywords": [
+   [
+    "claviceps"
+   ]
+  ],
+  "id": "q77",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Ergot",
+  "question": "What illness can eating ergot-contaminated grain cause in people?",
+  "must_contain": [
+   "ergotism"
+  ],
+  "answer_keywords": [
+   [
+    "ergotism"
+   ]
+  ],
+  "id": "q78",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Pink bollworm",
+  "question": "Which crop does the pink bollworm attack?",
+  "must_contain": [
+   "cotton"
+  ],
+  "answer_keywords": [
+   [
+    "cotton"
+   ]
+  ],
+  "id": "q79",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Cotton leaf curl virus",
+  "question": "How is cotton leaf curl virus spread?",
+  "must_contain": [
+   "whitefl"
+  ],
+  "answer_keywords": [
+   [
+    "whitefl"
+   ]
+  ],
+  "id": "q80",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Verticillium wilt",
+  "question": "What kind of organism causes Verticillium wilt?",
+  "must_contain": [
+   "fung"
+  ],
+  "answer_keywords": [
+   [
+    "fung",
+    "verticillium"
+   ]
+  ],
+  "id": "q81",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Aspergillus flavus",
+  "question": "Which toxin does Aspergillus flavus produce?",
+  "must_contain": [
+   "aflatoxin"
+  ],
+  "answer_keywords": [
+   [
+    "aflatoxin"
+   ]
+  ],
+  "id": "q82",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Aflatoxin",
+  "question": "Which crops are commonly contaminated by aflatoxins?",
+  "must_contain": [
+   "maize|corn|peanut|groundnut"
+  ],
+  "answer_keywords": [
+   [
+    "maize",
+    "corn",
+    "peanut",
+    "groundnut"
+   ]
+  ],
+  "id": "q83",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Cercospora arachidicola",
+  "question": "Which disease of peanuts does Cercospora arachidicola cause?",
+  "must_contain": [
+   "leaf spot"
+  ],
+  "answer_keywords": [
+   [
+    "leaf spot"
+   ]
+  ],
+  "id": "q84",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Glomerella tucumanensis",
+  "question": "Which sugarcane disease does Glomerella tucumanensis cause?",
+  "must_contain": [
+   "red rot"
+  ],
+  "answer_keywords": [
+   [
+    "red rot"
+   ]
+  ],
+  "id": "q85",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Sugarcane smut",
+  "question": "What structure grows from sugarcane plants infected with smut?",
+  "must_contain": [
+   "whip"
+  ],
+  "answer_keywords": [
+   [
+    "whip"
+   ]
+  ],
+  "id": "q86",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Panama disease",
+  "question": "Which fungus causes Panama disease of banana?",
+  "must_contain": [
+   "Fusarium oxysporum"
+  ],
+  "answer_keywords": [
+   [
+    "fusarium oxysporum",
+    "fusarium"
+   ]
+  ],
+  "id": "q87",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Panama disease",
+  "question": "Which banana variety was devastated by Panama disease in the 20th century?",
+  "must_contain": [
+   "Gros Michel"
+  ],
+  "answer_keywords": [
+   [
+    "gros michel"
+   ]
+  ],
+  "id": "q88",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Black sigatoka",
+  "question": "Which fungus causes black sigatoka of banana?",
+  "must_contain": [
+   "Mycosphaerella fijiensis|Pseudocercospora fijiensis"
+  ],
+  "answer_keywords": [
+   [
+    "fijiensis"
+   ]
+  ],
+  "id": "q89",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Potato virus Y",
+  "question": "How is potato virus Y spread?",
+  "must_contain": [
+   "aphid"
+  ],
+  "answer_keywords": [
+   [
+    "aphid"
+   ]
+  ],
+  "id": "q90",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Ralstonia solanacearum",
+  "question": "Which disease does Ralstonia solanacearum cause?",
+  "must_contain": [
+   "bacterial wilt|brown rot"
+  ],
+  "answer_keywords": [
+   [
+    "bacterial wilt",
+    "brown rot",
+    "wilt"
+   ]
+  ],
+  "id": "q91",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Tomato spotted wilt virus",
+  "question": "Which insects transmit tomato spotted wilt virus?",
+  "must_contain": [
+   "thrips"
+  ],
+  "answer_keywords": [
+   [
+    "thrips"
+   ]
+  ],
+  "id": "q92",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Phakopsora pachyrhizi",
+  "question": "Which crop does Asian soybean rust affect?",
+  "must_contain": [
+   "soybean"
+  ],
+  "answer_keywords": [
+   [
+    "soybean"
+   ]
+  ],
+  "id": "q93",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Soybean cyst nematode",
+  "question": "What kind of organism is the soybean cyst nematode?",
+  "must_contain": [
+   "nematode|roundworm"
+  ],
+  "answer_keywords": [
+   [
+    "nematode",
+    "roundworm",
+    "worm"
+   ]
+  ],
+  "id": "q94",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Corn smut",
+  "question": "What is corn smut called when it is eaten as a delicacy in Mexico?",
+  "must_contain": [
+   "huitlacoche"
+  ],
+  "answer_keywords": [
+   [
+    "huitlacoche"
+   ]
+  ],
+  "id": "q95",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Diabrotica virgifera",
+  "question": "Which crop do western corn rootworm larvae feed on?",
+  "must_contain": [
+   "corn|maize"
+  ],
+  "answer_keywords": [
+   [
+    "corn",
+    "maize"
+   ]
+  ],
+  "id": "q96",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Fall armyworm",
+  "question": "Which crop does the fall armyworm mainly damage?",
+  "must_contain": [
+   "maize|corn"
+  ],
+  "answer_keywords": [
+   [
+    "maize",
+    "corn"
+   ]
+  ],
+  "id": "q97",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Fall armyworm",
+  "question": "Which continent is the fall armyworm native to?",
+  "must_contain": [
+   "America"
+  ],
+  "answer_keywords": [
+   [
+    "america"
+   ]
+  ],
+  "id": "q98",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Desert locust",
+  "question": "In which regions are desert locusts found?",
+  "must_contain": [
+   "Africa|Asia"
+  ],
+  "answer_keywords": [
+   [
+    "africa",
+    "asia"
+   ]
+  ],
+  "id": "q99",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Aphid",
+  "question": "What sugary substance do aphids excrete?",
+  "must_contain": [
+   "honeydew"
+  ],
+  "answer_keywords": [
+   [
+    "honeydew"
+   ]
+  ],
+  "id": "q100",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Thrips",
+  "question": "What kind of damage do thrips do to plants?",
+  "must_contain": [
+   "feed|silver|scar"
+  ],
+  "answer_keywords": [
+   [
+    "feed",
+    "silver",
+    "scar",
+    "sap"
+   ]
+  ],
+  "id": "q101",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Root-knot nematode",
+  "question": "What do root-knot nematodes cause on plant roots?",
+  "must_contain": [
+   "gall"
+  ],
+  "answer_keywords": [
+   [
+    "gall",
+    "knot"
+   ]
+  ],
+  "id": "q102",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Cutworm",
+  "question": "Which part of young plants do cutworms cut through?",
+  "must_contain": [
+   "stem|seedling"
+  ],
+  "answer_keywords": [
+   [
+    "stem",
+    "seedling",
+    "base"
+   ]
+  ],
+  "id": "q103",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Diamondback moth",
+  "question": "Which group of crops does the diamondback moth attack?",
+  "must_contain": [
+   "cabbage|Brassica|cruciferous"
+  ],
+  "answer_keywords": [
+   [
+    "cabbage",
+    "brassica",
+    "cruciferous"
+   ]
+  ],
+  "id": "q104",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Tuta absoluta",
+  "question": "Which crop does Tuta absoluta mainly attack?",
+  "must_contain": [
+   "tomato"
+  ],
+  "answer_keywords": [
+   [
+    "tomato"
+   ]
+  ],
+  "id": "q105",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Spotted lanternfly",
+  "question": "Where is the spotted lanternfly originally from?",
+  "must_contain": [
+   "China|Asia"
+  ],
+  "answer_keywords": [
+   [
+    "china",
+    "asia"
+   ]
+  ],
+  "id": "q106",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Brown marmorated stink bug",
+  "question": "Where is the brown marmorated stink bug native to?",
+  "must_contain": [
+   "Asia|China|Japan"
+  ],
+  "answer_keywords": [
+   [
+    "asia",
+    "china",
+    "japan"
+   ]
+  ],
+  "id": "q107",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Damping off",
+  "question": "What is damping off?",
+  "must_contain": [
+   "seedling"
+  ],
+  "answer_keywords": [
+   [
+    "seedling"
+   ]
+  ],
+  "id": "q108",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Sooty mold",
+  "question": "What does sooty mold grow on?",
+  "must_contain": [
+   "honeydew"
+  ],
+  "answer_keywords": [
+   [
+    "honeydew"
+   ]
+  ],
+  "id": "q109",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Agrobacterium tumefaciens",
+  "question": "Which plant disease does Agrobacterium tumefaciens cause?",
+  "must_contain": [
+   "crown gall"
+  ],
+  "answer_keywords": [
+   [
+    "crown gall"
+   ]
+  ],
+  "id": "q110",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Fire blight",
+  "question": "Which bacterium causes fire blight?",
+  "must_contain": [
+   "Erwinia amylovora"
+  ],
+  "answer_keywords": [
+   [
+    "erwinia amylovora"
+   ]
+  ],
+  "id": "q111",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Citrus canker",
+  "question": "Which bacterium causes citrus canker?",
+  "must_contain": [
+   "Xanthomonas"
+  ],
+  "answer_keywords": [
+   [
+    "xanthomonas"
+   ]
+  ],
+  "id": "q112",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Phytophthora ramorum",
+  "question": "Which disease does Phytophthora ramorum cause?",
+  "must_contain": [
+   "sudden oak death"
+  ],
+  "answer_keywords": [
+   [
+    "sudden oak death"
+   ]
+  ],
+  "id": "q113",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Chestnut blight",
+  "question": "Which tree did chestnut blight devastate in North America?",
+  "must_contain": [
+   "American chestnut"
+  ],
+  "answer_keywords": [
+   [
+    "american chestnut",
+    "chestnut"
+   ]
+  ],
+  "id": "q114",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Taphrina deformans",
+  "question": "Which disease does Taphrina deformans cause on peach trees?",
+  "must_contain": [
+   "leaf curl"
+  ],
+  "answer_keywords": [
+   [
+    "leaf curl"
+   ]
+  ],
+  "id": "q115",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Monilinia fructicola",
+  "question": "Which fruits does Monilinia fructicola rot?",
+  "must_contain": [
+   "peach|stone fruit|plum|cherry"
+  ],
+  "answer_keywords": [
+   [
+    "peach",
+    "stone fruit",
+    "plum",
+    "cherry"
+   ]
+  ],
+  "id": "q116",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Neem oil",
+  "question": "Which tree is neem oil obtained from?",
+  "must_contain": [
+   "neem tree|Azadirachta"
+  ],
+  "answer_keywords": [
+   [
+    "neem",
+    "azadirachta"
+   ]
+  ],
+  "id": "q117",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Trichoderma",
+  "question": "How do Trichoderma fungi help protect crops?",
+  "must_contain": [
+   "biocontrol|biological control|pathogen"
+  ],
+  "answer_keywords": [
+   [
+    "biocontrol",
+    "biological control",
+    "pathogen",
+    "antagon"
+   ]
+  ],
+  "id": "q118",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Pesticide resistance",
+  "question": "How does pesticide resistance develop in pests?",
+  "must_contain": [
+   "selection|survive|evol"
+  ],
+  "answer_keywords": [
+   [
+    "selection",
+    "survive",
+    "evol",
+    "resistan"
+   ]
+  ],
+  "id": "q119",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Organic farming",
+  "question": "What does organic farming avoid using?",
+  "must_contain": [
+   "synthetic|pesticide|fertili"
+  ],
+  "answer_keywords": [
+   [
+    "synthetic",
+    "pesticide",
+    "fertili",
+    "chemical"
+   ]
+  ],
+  "id": "q120",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Intercropping",
+  "question": "What is intercropping?",
+  "must_contain": [
+   "two or more|multiple|more than one"
+  ],
+  "answer_keywords": [
+   [
+    "two or more",
+    "multiple",
+    "more than one",
+    "different crops"
+   ]
+  ],
+  "id": "q121",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Green Revolution in India",
+  "question": "Which scientist is known as the father of the Green Revolution in India?",
+  "must_contain": [
+   "Swaminathan"
+  ],
+  "answer_keywords": [
+   [
+    "swaminathan"
+   ]
+  ],
+  "id": "q122",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Rabi crop",
+  "question": "Which crop is a major rabi crop in India?",
+  "must_contain": [
+   "wheat"
+  ],
+  "answer_keywords": [
+   [
+    "wheat"
+   ]
+  ],
+  "id": "q123",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Chili pepper",
+  "question": "Which compound makes chili peppers hot?",
+  "must_contain": [
+   "capsaicin"
+  ],
+  "answer_keywords": [
+   [
+    "capsaicin"
+   ]
+  ],
+  "id": "q124",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Chickpea",
+  "question": "Which country is the largest producer of chickpeas?",
+  "must_contain": [
+   "India"
+  ],
+  "answer_keywords": [
+   [
+    "india"
+   ]
+  ],
+  "id": "q125",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Pigeon pea",
+  "question": "Which country produces the most pigeon peas?",
+  "must_contain": [
+   "India"
+  ],
+  "answer_keywords": [
+   [
+    "india"
+   ]
+  ],
+  "id": "q126",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Puccinia striiformis var. striiformis",
+  "question": "What is stripe rust of wheat also called?",
+  "must_contain": [
+   "yellow rust|stripe rust"
+  ],
+  "answer_keywords": [
+   [
+    "yellow rust",
+    "yellow"
+   ]
+  ],
+  "id": "q127",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Loose smut",
+  "question": "Which part of the seed does the loose smut fungus live in?",
+  "must_contain": [
+   "embryo"
+  ],
+  "answer_keywords": [
+   [
+    "embryo"
+   ]
+  ],
+  "id": "q128",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Helicoverpa armigera",
+  "question": "In which regions is Helicoverpa armigera found?",
+  "must_contain": [
+   "Old World|Africa|Australia"
+  ],
+  "answer_keywords": [
+   [
+    "old world",
+    "africa",
+    "australia",
+    "asia",
+    "europe"
+   ]
+  ],
+  "id": "q129",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Fusarium wilt",
+  "question": "Which plant tissue does Fusarium wilt colonise?",
+  "must_contain": [
+   "xylem"
+  ],
+  "answer_keywords": [
+   [
+    "xylem",
+    "vascular"
+   ]
+  ],
+  "id": "q130",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Rhynchophorus ferrugineus",
+  "question": "Where did the red palm weevil originate?",
+  "must_contain": [
+   "South(ern)? Asia|Asia|Melanesia"
+  ],
+  "answer_keywords": [
+   [
+    "asia",
+    "melanesia"
+   ]
+  ],
+  "id": "q131",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Hemileia vastatrix",
+  "question": "What happened to coffee growing in Ceylon because of coffee rust?",
+  "must_contain": [
+   "Ceylon|Sri Lanka"
+  ],
+  "answer_keywords": [
+   [
+    "ceylon",
+    "sri lanka",
+    "tea",
+    "destroy",
+    "wiped",
+    "collapse"
+   ]
+  ],
+  "id": "q132",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Hypothenemus hampei",
+  "question": "Where is the coffee berry borer originally from?",
+  "must_contain": [
+   "Africa"
+  ],
+  "answer_keywords": [
+   [
+    "africa"
+   ]
+  ],
+  "id": "q133",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Calcium deficiency (plant)",
+  "question": "Which tomato fruit disorder is caused by calcium deficiency?",
+  "must_contain": [
+   "blossom.end rot"
+  ],
+  "answer_keywords": [
+   [
+    "blossom end rot",
+    "blossom-end rot"
+   ]
+  ],
+  "id": "q134",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Japanese beetle",
+  "question": "Where was the Japanese beetle first found in the United States?",
+  "must_contain": [
+   "New Jersey"
+  ],
+  "answer_keywords": [
+   [
+    "new jersey"
+   ]
+  ],
+  "id": "q135",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Biological pest control",
+  "question": "What is classical biological control?",
+  "must_contain": [
+   "classical"
+  ],
+  "answer_keywords": [
+   [
+    "classical",
+    "introduc",
+    "natural enem",
+    "release"
+   ]
+  ],
+  "id": "q136",
+  "split": "dev"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Soil solarization",
+  "question": "How does soil solarization heat the soil?",
+  "must_contain": [
+   "plastic|clear"
+  ],
+  "answer_keywords": [
+   [
+    "plastic",
+    "clear",
+    "tarp",
+    "sheet"
+   ]
+  ],
+  "id": "q137",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Kharif crop",
+  "question": "When are kharif crops harvested?",
+  "must_contain": [
+   "September|October"
+  ],
+  "answer_keywords": [
+   [
+    "september",
+    "october"
+   ]
+  ],
+  "id": "q138",
+  "split": "test"
+ },
+ {
+  "type": "answerable",
+  "gold_title": "Aphid",
+  "question": "How do aphids reproduce so quickly?",
+  "must_contain": [
+   "parthenogen"
+  ],
+  "answer_keywords": [
+   [
+    "parthenogen",
+    "without mating",
+    "asexual",
+    "females"
+   ]
+  ],
+  "id": "q139",
+  "split": "dev"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "What is the minimum support price of paddy this year?",
+  "id": "q140",
+  "split": "test"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "How many hectares of cotton were planted in Maharashtra in 2023?",
+  "id": "q141",
+  "split": "test"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "What dose of tricyclazole should I use against rice blast per acre?",
+  "id": "q142",
+  "split": "dev"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "How much does a litre of neem oil cost in India?",
+  "id": "q143",
+  "split": "test"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "Which wheat variety is best for Punjab?",
+  "id": "q144",
+  "split": "test"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "What was the wheat harvest in Uttar Pradesh last year?",
+  "id": "q145",
+  "split": "dev"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "When should I sow cotton in Gujarat?",
+  "id": "q146",
+  "split": "test"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "How do I apply for the PM-KISAN scheme?",
+  "id": "q147",
+  "split": "test"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "How much fertiliser should I apply per acre of paddy in Andhra Pradesh?",
+  "id": "q148",
+  "split": "dev"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "Which brand of imidacloprid is best against whitefly on chilli?",
+  "id": "q149",
+  "split": "test"
+ },
+ {
+  "type": "unanswerable_topic",
+  "question": "Which insurance covers corn crop loss in Iowa?",
+  "id": "q150",
+  "split": "test"
+ },
+ {
+  "type": "off_topic",
+  "question": "Who won the 2011 cricket World Cup?",
+  "id": "q151",
+  "split": "dev"
+ },
+ {
+  "type": "off_topic",
+  "question": "What time does the first metro train leave Hyderabad?",
+  "id": "q152",
+  "split": "test"
+ },
+ {
+  "type": "off_topic",
+  "question": "How do I convert a Python list into a set?",
+  "id": "q153",
+  "split": "test"
  }
 ]
